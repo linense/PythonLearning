@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240503 06:33:15.727" rpa="false" schemaversion="4">
+<suite id="s1" name="PythonLearning" source="D:\OneDrive\Python\PythonLearning">
+<suite id="s1-s1" name="21 FetchData" source="D:\OneDrive\Python\PythonLearning\21_FetchData">
+<suite id="s1-s1-s1" name="TC 001 Start Close Browser" source="D:\OneDrive\Python\PythonLearning\21_FetchData\TC_001_Start_Close_Browser.robot">
+<test id="s1-s1-s1-t1" name="TC_001 Browser Start Close" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240503 06:33:16.475" level="INFO">Opening browser 'firefox' to base url 'https://www.mozilla.org/de/'.</msg>
+<status status="PASS" starttime="20240503 06:33:16.472" endtime="20240503 06:33:31.343"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240503 06:33:31.385" endtime="20240503 06:33:37.546"/>
+</kw>
+<status status="PASS" starttime="20240503 06:33:16.467" endtime="20240503 06:33:37.549"/>
+</test>
+<status status="PASS" starttime="20240503 06:33:15.832" endtime="20240503 06:33:37.554"/>
+</suite>
+<status status="PASS" starttime="20240503 06:33:15.820" endtime="20240503 06:33:37.563"/>
+</suite>
+<status status="PASS" starttime="20240503 06:33:15.737" endtime="20240503 06:33:37.570"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="PythonLearning">PythonLearning</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="21 FetchData">PythonLearning.21 FetchData</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC 001 Start Close Browser">PythonLearning.21 FetchData.TC 001 Start Close Browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
