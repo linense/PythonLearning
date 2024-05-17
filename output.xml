@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-05-03T22:41:03.930922" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 001 Start Close Browser" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\21_FetchData\TC_001_Start_Close_Browser.robot">
+<test id="s1-t1" name="TC_001 Browser Start Close" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-03T22:41:04.475407" level="INFO">Opening browser 'firefox' to base url 'https://www.mozilla.org/de/'.</msg>
+<msg time="2024-05-03T22:41:06.175122" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json): error trying to connect: dns error: Der angegebene Host ist unbekannt. (os error 11001). Using latest geckodriver version</msg>
+<msg time="2024-05-03T22:41:06.181119" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest): error trying to connect: dns error: Der angegebene Host ist unbekannt. (os error 11001)</msg>
+<arg>${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-03T22:41:04.474396" elapsed="15.869852"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-03T22:41:20.345245" elapsed="2.020541"/>
+</kw>
+<status status="PASS" start="2024-05-03T22:41:04.472266" elapsed="17.894520"/>
+</test>
+<status status="PASS" start="2024-05-03T22:41:03.942708" elapsed="18.426263"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 001 Start Close Browser">TC 001 Start Close Browser</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-03T22:41:06.175122" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json): error trying to connect: dns error: Der angegebene Host ist unbekannt. (os error 11001). Using latest geckodriver version</msg>
+<msg time="2024-05-03T22:41:06.181119" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest): error trying to connect: dns error: Der angegebene Host ist unbekannt. (os error 11001)</msg>
+</errors>
+</robot>
