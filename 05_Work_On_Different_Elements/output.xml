@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-05-21T21:51:13.737519" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 001 Start Close Browser" source="C:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\05_TextBoxes\TC_001_Start_Close_Browser.robot">
+<test id="s1-t1" name="Robot First Test Case" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-21T21:51:13.995001" level="INFO">Opening browser 'Chrome' to base url 'http://thetestingworld.com/testings'.</msg>
+<msg time="2024-05-21T21:51:14.845330" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-21T21:51:13.995001" elapsed="3.278807"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-21T21:51:17.273808" elapsed="0.035543"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T21:51:17.310352" level="INFO">Typing text 'TestingWorld' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>TestingWorld</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T21:51:17.309351" elapsed="0.089124"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T21:51:17.399482" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'xpath://input[@name='fld_email']'.</msg>
+<arg>xpath://input[@name='fld_email']</arg>
+<arg>testingworldindia@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T21:51:17.398475" elapsed="0.083866"/>
+</kw>
+<status status="PASS" start="2024-05-21T21:51:13.993996" elapsed="3.489783"/>
+</test>
+<status status="PASS" start="2024-05-21T21:51:13.739528" elapsed="3.745260"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 001 Start Close Browser">TC 001 Start Close Browser</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-21T21:51:14.845330" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)</msg>
+</errors>
+</robot>

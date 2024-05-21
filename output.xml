@@ -1,22 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-05-03T22:41:03.930922" rpa="false" schemaversion="5">
-<suite id="s1" name="TC 001 Start Close Browser" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\21_FetchData\TC_001_Start_Close_Browser.robot">
-<test id="s1-t1" name="TC_001 Browser Start Close" line="10">
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-05-21T22:32:55.327127" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 003 Keywords" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\05_Work_On_Different_Elements\TC_003_Keywords.robot">
+<test id="s1-t1" name="Use own keyword" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-03T22:41:04.475407" level="INFO">Opening browser 'firefox' to base url 'https://www.mozilla.org/de/'.</msg>
-<msg time="2024-05-03T22:41:06.175122" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json): error trying to connect: dns error: Der angegebene Host ist unbekannt. (os error 11001). Using latest geckodriver version</msg>
-<msg time="2024-05-03T22:41:06.181119" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest): error trying to connect: dns error: Der angegebene Host ist unbekannt. (os error 11001)</msg>
+<msg time="2024-05-21T22:32:55.601155" level="INFO">Opening browser 'Firefox' to base url 'http://thetestingworld.com/testings'.</msg>
+<msg time="2024-05-21T22:32:56.279783" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-05-21T22:32:56.281188" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
 <arg>${URL}</arg>
+<arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-03T22:41:04.474396" elapsed="15.869852"/>
+<status status="PASS" start="2024-05-21T22:32:55.600155" elapsed="8.577747"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-03T22:41:20.345245" elapsed="2.020541"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-21T22:33:04.179084" elapsed="0.275868"/>
 </kw>
-<status status="PASS" start="2024-05-03T22:41:04.472266" elapsed="17.894520"/>
+<kw name="Enter Username Email Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T22:33:04.456149" level="INFO">Typing text 'Testing' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T22:33:04.456149" elapsed="0.104868"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T22:33:04.562251" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'name:fld_email'.</msg>
+<arg>name:fld_email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T22:33:04.561017" elapsed="0.031996"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T22:33:04.594357" level="INFO">Typing text '123456' into text field 'name:fld_password'.</msg>
+<arg>name:fld_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T22:33:04.593013" elapsed="0.026224"/>
+</kw>
+<arg>Testing</arg>
+<arg>testingworldindia@gmail.com</arg>
+<arg>123456</arg>
+<status status="PASS" start="2024-05-21T22:33:04.454952" elapsed="0.164285"/>
+</kw>
+<status status="PASS" start="2024-05-21T22:32:55.599155" elapsed="9.022130"/>
 </test>
-<status status="PASS" start="2024-05-03T22:41:03.942708" elapsed="18.426263"/>
+<status status="PASS" start="2024-05-21T22:32:55.334403" elapsed="9.287901"/>
 </suite>
 <statistics>
 <total>
@@ -25,11 +53,11 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC 001 Start Close Browser">TC 001 Start Close Browser</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 003 Keywords">TC 003 Keywords</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-03T22:41:06.175122" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json): error trying to connect: dns error: Der angegebene Host ist unbekannt. (os error 11001). Using latest geckodriver version</msg>
-<msg time="2024-05-03T22:41:06.181119" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest): error trying to connect: dns error: Der angegebene Host ist unbekannt. (os error 11001)</msg>
+<msg time="2024-05-21T22:32:56.279783" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-05-21T22:32:56.281188" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
 </errors>
 </robot>
