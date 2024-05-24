@@ -1,36 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-05-23T21:04:05.472119" rpa="false" schemaversion="5">
-<suite id="s1" name="TC 004 RunKeyword" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\06_Writing_Code\TC_004_RunKeyword.robot">
-<test id="s1-t1" name="TC_002 RunKeywordIf" line="12">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-05-23T21:04:05.746184" level="INFO">${Var} = NO</msg>
-<var>${Var}</var>
-<arg>NO</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-05-23T21:04:05.746184" elapsed="0.002270"/>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-05-24T11:37:07.315567" rpa="false" schemaversion="5">
+<suite id="s1" name="TC07 01 SetSpeed" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\07_WaitsTimeouts\TC07_01_SetSpeed.robot">
+<test id="s1-t1" name="TC_001 Set Selenium Speed" line="6">
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2024-05-24T11:37:07.766235" level="INFO">${speed} = 0 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-05-24T11:37:07.765227" elapsed="0.004279"/>
 </kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<arg>'${Var}'=='YES'</arg>
-<arg>Log To Console</arg>
-<arg>Value Found</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-05-23T21:04:05.748454" elapsed="0.001021"/>
-</kw>
-<kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Value Not Found</arg>
+<arg>${speed}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-23T21:04:05.749475" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T11:37:07.771503" elapsed="0.001223"/>
 </kw>
-<arg>'${Var}'=='NO'</arg>
-<arg>Log To Console</arg>
-<arg>Value Not Found</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-05-23T21:04:05.749475" elapsed="0.000000"/>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-24T11:37:07.774083" level="INFO">Opening browser 'Firefox' to base url 'https://thetestingworld.com/testings'.</msg>
+<msg time="2024-05-24T11:37:08.756379" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-05-24T11:37:08.757894" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<arg>https://thetestingworld.com/testings</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-24T11:37:07.772726" elapsed="7.897793"/>
 </kw>
-<status status="PASS" start="2024-05-23T21:04:05.745172" elapsed="0.005631"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-24T11:37:15.672520" elapsed="0.308288"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-05-24T11:37:15.981812" elapsed="0.001306"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T11:37:15.985455" level="INFO">Typing text 'Testing' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T11:37:15.984130" elapsed="6.105868"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T11:37:22.089998" level="INFO">Typing text 'TestingworldIndia@gmail.com' into text field 'name:fld_email'.</msg>
+<arg>name:fld_email</arg>
+<arg>TestingworldIndia@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T11:37:22.089998" elapsed="6.033138"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T11:37:28.124190" level="INFO">Typing text 'abcd' into text field 'name:fld_password'.</msg>
+<arg>name:fld_password</arg>
+<arg>abcd</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T11:37:28.123136" elapsed="6.024709"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2024-05-24T11:37:34.148853" level="INFO">${speed} = 2 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-05-24T11:37:34.147845" elapsed="0.001008"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-24T11:37:34.148853" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2024-05-24T11:37:07.763619" elapsed="26.386235"/>
 </test>
-<status status="PASS" start="2024-05-23T21:04:05.477118" elapsed="0.274194"/>
+<status status="PASS" start="2024-05-24T11:37:07.335404" elapsed="26.816451"/>
 </suite>
 <statistics>
 <total>
@@ -39,9 +74,11 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC 004 RunKeyword">TC 004 RunKeyword</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC07 01 SetSpeed">TC07 01 SetSpeed</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-05-24T11:37:08.756379" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-05-24T11:37:08.757894" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
 </errors>
 </robot>
