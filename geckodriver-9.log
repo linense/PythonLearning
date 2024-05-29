@@ -1,0 +1,26 @@
+1717011460516	geckodriver	INFO	Listening on 127.0.0.1:63882
+1717011461102	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63883" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofilebTMDyq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1717011461546	Marionette	INFO	Marionette enabled
+1717011461657	Marionette	INFO	Listening on port 63890
+WebDriver BiDi listening on ws://127.0.0.1:63883
+Read port: 63890
+1717011461826	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63883/devtools/browser/882b615e-57e2-42f3-b357-093a15ac3e21
+1717011472498	Marionette	INFO	Stopped listening on port 63890
+JavaScript warning: https://www.youtube.com/s/player/79e6d03a/player_ias.vflset/de_DE/base.js, line 1946: Script terminated by timeout at:
+g.BA/<@https://www.youtube.com/s/player/79e6d03a/player_ias.vflset/de_DE/base.js:1946:49
+
+JavaScript warning: moz-extension://cfd5b9e3-e92e-49a9-8b7b-83effd57258f/js/vapi-common.js, line 58: Script terminated by timeout at:
+on/this.timer<@moz-extension://cfd5b9e3-e92e-49a9-8b7b-83effd57258f/js/vapi-common.js:58:17
+
+JavaScript warning: https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-vendor.js, line 2: Script terminated by timeout at:
+set@https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-vendor.js:2:8154
+2b0e/</Bn/Un.set@https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-vendor.js:2:32467
+f604/</isReconnecting/<@https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-chunk-24d8db78.js:2:98695
+
+Dynamically enable window occlusion 1
+JavaScript warning: https://www.google.com/js/th/eibAoDspQrxJEgfHXHg_r2ZFWrvhsrgEHNatK7QQLfo.js line 2 > eval line 2710 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.google.com/js/th/eibAoDspQrxJEgfHXHg_r2ZFWrvhsrgEHNatK7QQLfo.js line 2 > eval line 6046 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

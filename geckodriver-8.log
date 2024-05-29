@@ -1,0 +1,22 @@
+1717011428118	geckodriver	INFO	Listening on 127.0.0.1:63763
+1717011428751	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63764" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofile10maen"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1717011429173	Marionette	INFO	Marionette enabled
+1717011429274	Marionette	INFO	Listening on port 63773
+WebDriver BiDi listening on ws://127.0.0.1:63764
+Read port: 63773
+1717011429462	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63764/devtools/browser/46f6a336-ddee-44b9-9ae7-ebf21d8e63c3
+1717011438879	Marionette	INFO	Stopped listening on port 63773
+JavaScript warning: https://www.youtube.com/s/player/b9ad8b0a/player_ias.vflset/de_DE/base.js, line 1936: Script terminated by timeout at:
+g.BA/<@https://www.youtube.com/s/player/b9ad8b0a/player_ias.vflset/de_DE/base.js:1936:49
+
+JavaScript warning: https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-chunk-vendors.js, line 2: Script terminated by timeout at:
+cc70/</a.prototype.disconnect@https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-chunk-vendors.js:2:88064
+cc70/</a.prototype.disconnect/<@https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-chunk-vendors.js:2:87977
+
+Dynamically enable window occlusion 1
+JavaScript warning: https://www.google.com/js/th/eibAoDspQrxJEgfHXHg_r2ZFWrvhsrgEHNatK7QQLfo.js line 2 > eval line 7650 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.google.com/js/th/eibAoDspQrxJEgfHXHg_r2ZFWrvhsrgEHNatK7QQLfo.js line 2 > eval line 3696 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
