@@ -1,0 +1,91 @@
+1717146551646	geckodriver	INFO	Listening on 127.0.0.1:56247
+1717146552227	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56248" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofileRoNGtw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1717146552759	Marionette	INFO	Marionette enabled
+1717146552879	Marionette	INFO	Listening on port 56255
+WebDriver BiDi listening on ws://127.0.0.1:56248
+Read port: 56255
+1717146553112	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56248/devtools/browser/bab1b233-4b73-48d9-a0aa-76a333d2b71d
+JavaScript error: moz-extension://98112b61-d229-4d18-b17b-3fb8bf448fd4/js/scriptlet-filtering.js, line 97: TypeError: handle is undefined
+JavaScript error: resource://gre/modules/ConduitsChild.sys.mjs, line 61: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript error: moz-extension://98112b61-d229-4d18-b17b-3fb8bf448fd4/js/vapi-client.js, line 214: InvalidStateError: An exception was thrown
+[Child 16476, MediaDecoderStateMachine #1] WARNING: Decoder=1e4e8f5bc00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 16476, MediaDecoderStateMachine #1] WARNING: Decoder=1e4e8f5bc00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:167
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.ConsentUi.de.ScSuHkJcvxw.es5.O/ck=boq-identity.ConsentUi.BDn3tq0XjB0.L.F4.O/am=CCzQWQ/d=1/exm=A7fCU,BBI74,BVgquf,COQbmf,EEDORb,EFQ78c,GkRiKb,IZT63,JNoxi,KG2eXe,KUM7Z,L1AAkb,LEikZe,MdUzUe,Mlhmy,MpJwZc,Ndreoc,NwH0H,O1Gjze,O6y8ed,OTA3Ae,OgOVNe,OmgaI,PHUIyb,PrPYRd,QIhFr,RMhBfe,SdcwHb,SpsfSb,U0aPgd,UMu52b,UUJqVe,Uas9Hd,Ulmmrd,V3dDOb,VwDzFe,WpP9Yc,XVMNvd,YTxL4,Z5uLle,ZfAoz,ZwDk9d,_b,_tp,aW3pY,aurFic,byfTOb,e5qFLc,fKUV3e,fkuQ3,gychg,hc6Ubd,kWgXee,lsjVmc,lwddkf,m9oV,n73qwf,ovKuLd,pjICDe,pw70Gc,s39S4,soHxf,vjKJJ,w9hDv,wg1P6b,ws9Tlc,xQtZb,xUdipf,y5vRwf,yDVVkb,ywOR5c,zbML3c,zr1jrb/excm=_b,_tp,mainview/ed=1/wt=2/ujg=1/rs=AOaEmlGGIS7gZH4PiWzfpQkCmeGGuZveaA/ee=BcQPH:lOY4De;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:QIhFr;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd, line 64: Script terminated by timeout at:
+e@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.ConsentUi.de.ScSuHkJcvxw.es5.O/ck=boq-identity.ConsentUi.BDn3tq0XjB0.L.F4.O/am=CCzQWQ/d=1/exm=A7fCU,BBI74,BVgquf,COQbmf,EEDORb,EFQ78c,GkRiKb,IZT63,JNoxi,KG2eXe,KUM7Z,L1AAkb,LEikZe,MdUzUe,Mlhmy,MpJwZc,Ndreoc,NwH0H,O1Gjze,O6y8ed,OTA3Ae,OgOVNe,OmgaI,PHUIyb,PrPYRd,QIhFr,RMhBfe,SdcwHb,SpsfSb,U0aPgd,UMu52b,UUJqVe,Uas9Hd,Ulmmrd,V3dDOb,VwDzFe,WpP9Yc,XVMNvd,YTxL4,Z5uLle,ZfAoz,ZwDk9d,_b,_tp,aW3pY,aurFic,byfTOb,e5qFLc,fKUV3e,fkuQ3,gychg,hc6Ubd,kWgXee,lsjVmc,lwddkf,m9oV,n73qwf,ovKuLd,pjICDe,pw70Gc,s39S4,soHxf,vjKJJ,w9hDv,wg1P6b,ws9Tlc,xQtZb,xUdipf,y5vRwf,yDVVkb,ywOR5c,zbML3c,zr1jrb/excm=_b,_tp,mainview/ed=1/wt=2/ujg=1/rs=AOaEmlGGIS7gZH4PiWzfpQkCmeGGuZveaA/ee=BcQPH:lOY4De;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:QIhFr;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:64:33
+Yha/<@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.ConsentUi.de.ScSuHkJcvxw.es5.O/ck=boq-identity.ConsentUi.BDn3tq0XjB0.L.F4.O/am=CCzQWQ/d=1/exm=A7fCU,BBI74,BVgquf,COQbmf,EEDORb,EFQ78c,GkRiKb,IZT63,JNoxi,KG2eXe,KUM7Z,L1AAkb,LEikZe,MdUzUe,Mlhmy,MpJwZc,Ndreoc,NwH0H,O1Gjze,O6y8ed,OTA3Ae,OgOVNe,OmgaI,PHUIyb,PrPYRd,QIhFr,RMhBfe,SdcwHb,SpsfSb,U0aPgd,UMu52b,UUJqVe,Uas9Hd,Ulmmrd,V3dDOb,VwDzFe,WpP9Yc,XVMNvd,YTxL4,Z5uLle,ZfAoz,ZwDk9d,_b,_tp,aW3pY,aurFic,byfTOb,e5qFLc,fKUV3e,fkuQ3,gychg,hc6Ubd,kWgXee,lsjVmc,lwddkf,m9oV,n73qwf,ovKuLd,pjICDe,pw70Gc,s39S4,soHxf,vjKJJ,w9hDv,wg1P6b,ws9Tlc,xQtZb,xUdipf,y5vRwf,yDVVkb,ywOR5c,zbML3c,zr1jrb/excm=_b,_tp,mainview/ed=1/wt=2/ujg=1/rs=AOaEmlGGIS7gZH4PiWzfpQkCmeGGuZveaA/ee=BcQPH:lOY4De;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:QIhFr;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:65:30
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.ConsentUi.de.ScSuHkJcvxw.es5.O/ck=boq-identity.ConsentUi.BDn3tq0XjB0.L.F4.O/am=CCzQWQ/d=1/exm=A7fCU,BBI74,BVgquf,COQbmf,EEDORb,EFQ78c,GkRiKb,IZT63,JNoxi,KG2eXe,KUM7Z,L1AAkb,LEikZe,MdUzUe,Mlhmy,MpJwZc,Ndreoc,NwH0H,O1Gjze,O6y8ed,OTA3Ae,OgOVNe,OmgaI,PHUIyb,PrPYRd,QIhFr,RMhBfe,SdcwHb,SpsfSb,U0aPgd,UMu52b,UUJqVe,Uas9Hd,Ulmmrd,V3dDOb,VwDzFe,WpP9Yc,XVMNvd,YTxL4,Z5uLle,ZfAoz,ZwDk9d,_b,_tp,aW3pY,aurFic,byfTOb,e5qFLc,fKUV3e,fkuQ3,gychg,hc6Ubd,kWgXee,lsjVmc,lwddkf,m9oV,n73qwf,ovKuLd,pjICDe,pw70Gc,s39S4,soHxf,vjKJJ,w9hDv,wg1P6b,ws9Tlc,xQtZb,xUdipf,y5vRwf,yDVVkb,ywOR5c,zbML3c,zr1jrb/excm=_b,_tp,mainview/ed=1/wt=2/ujg=1/rs=AOaEmlGGIS7gZH4PiWzfpQkCmeGGuZveaA/ee=BcQPH:lOY4De;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:QIhFr;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:60:1963
+
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.sys.mjs'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 719"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:719:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:566:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:465:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:429:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2208:33
+addAllSources@resource://devtools/server/actors/thread.js:1528:14
+watch@resource://devtools/server/actors/resources/sources.js:81:17
+watchResources@resource://devtools/server/actors/resources/index.js:340:15
+addOrSetSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:19:21
+addOrSetSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:54:23
+_addOrSetSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:544:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:446:21
+Line: 719, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'moz-extension://98112b61-d229-4d18-b17b-3fb8bf448fd4/js/vapi.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 719"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:719:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:566:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:465:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:429:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2208:33
+addAllSources@resource://devtools/server/actors/thread.js:1528:14
+watch@resource://devtools/server/actors/resources/sources.js:81:17
+watchResources@resource://devtools/server/actors/resources/index.js:340:15
+addOrSetSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:19:21
+addOrSetSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:54:23
+_addOrSetSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:544:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:446:21
+Line: 719, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 719"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:719:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:566:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:465:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:429:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2208:33
+addAllSources@resource://devtools/server/actors/thread.js:1528:14
+watch@resource://devtools/server/actors/resources/sources.js:81:17
+watchResources@resource://devtools/server/actors/resources/index.js:340:15
+addOrSetSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:19:21
+addOrSetSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:54:23
+_addOrSetSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:544:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:446:21
+Line: 719, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 719: Failed to open input source 'resource://gre/modules/ExtensionContent.sys.mjs'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 719: Failed to open input source 'moz-extension://98112b61-d229-4d18-b17b-3fb8bf448fd4/js/vapi.js'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 719: Failed to open input source 'file:///'
+SourceActor threw an exception: Error: Failed to fetch https://static.doubleclick.net/instream/ad_status.js. Code 2147500036.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:612:16
+onStopRequest@resource://gre/modules/NetUtil.sys.mjs:124:18
+Line: 612, column: 16
+console.error: (new Error("Failed to fetch https://static.doubleclick.net/instream/ad_status.js. Code 2147500036.", "resource://devtools/shared/DevToolsUtils.js", 612))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 612: Error: Failed to fetch https://static.doubleclick.net/instream/ad_status.js. Code 2147500036.
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 105: Error: Connection closed, pending request to server0.conn0.windowGlobal6442450945/domnode54, type setNodeValue failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:299:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+showTextEditor/done/</<@resource://devtools/client/inspector/markup/views/text-editor.js:103:25
+do@resource://devtools/client/shared/undo.js:70:16
+endBatch@resource://devtools/client/shared/undo.js:81:11
+do@resource://devtools/client/shared/undo.js:93:10
+showTextEditor/done/<@resource://devtools/client/inspector/markup/views/text-editor.js:101:31
+
+JavaScript warning: https://www.google.com/js/th/8RF9Niw07aUICNCAbe3-TNvweVXnMmbokKfNU9TTb8E.js line 2 > eval line 7556 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1717146691959	Marionette	INFO	Stopped listening on port 56255
+Dynamically enable window occlusion 1

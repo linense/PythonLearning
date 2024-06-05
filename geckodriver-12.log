@@ -1,25 +1,15 @@
-1717012342514	geckodriver	INFO	Listening on 127.0.0.1:65280
-1717012343150	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65281" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofileLHzY0C"
+1717604504978	geckodriver	INFO	Listening on 127.0.0.1:50548
+1717604505593	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50549" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofilefMb8Dj"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1717012343594	Marionette	INFO	Marionette enabled
-1717012343700	Marionette	INFO	Listening on port 65288
-WebDriver BiDi listening on ws://127.0.0.1:65281
-Read port: 65288
-1717012343869	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:65281/devtools/browser/798a5929-b908-4188-b010-d5c528e3f385
-JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSWindowActor 'DevToolsFrame'
-JavaScript error: resource://devtools/shared/protocol/Front.js, line 105: Error: Connection closed, pending request to server0.conn0.windowGlobal6442450945/domnode57, type setNodeValue failed
-
-Request stack:
-request@resource://devtools/shared/protocol/Front.js:299:14
-generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
-showTextEditor/done/</<@resource://devtools/client/inspector/markup/views/text-editor.js:103:25
-do@resource://devtools/client/shared/undo.js:70:16
-endBatch@resource://devtools/client/shared/undo.js:81:11
-do@resource://devtools/client/shared/undo.js:93:10
-showTextEditor/done/<@resource://devtools/client/inspector/markup/views/text-editor.js:101:31
-
-1717012596421	Marionette	INFO	Stopped listening on port 65288
+1717604506222	Marionette	INFO	Marionette enabled
+1717604506366	Marionette	INFO	Listening on port 50556
+WebDriver BiDi listening on ws://127.0.0.1:50549
+Read port: 50556
+1717604506571	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50549/devtools/browser/c6db8bc6-0509-4f66-8de9-8f53d6459c2e
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+1717604518388	Marionette	INFO	Stopped listening on port 50556
 Dynamically enable window occlusion 1

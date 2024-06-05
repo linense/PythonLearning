@@ -1,0 +1,19 @@
+1717605434167	geckodriver	INFO	Listening on 127.0.0.1:62499
+1717605434735	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62500" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofilemJE9sx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1717605435177	Marionette	INFO	Marionette enabled
+1717605435277	Marionette	INFO	Listening on port 62507
+WebDriver BiDi listening on ws://127.0.0.1:62500
+Read port: 62507
+1717605435445	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62500/devtools/browser/4df95c6c-df38-40bc-a1d0-85bb44bf528c
+1717605438866	Marionette	INFO	Stopped listening on port 62507
+JavaScript warning: moz-extension://37c20367-45ba-4704-b999-14fe3647e5f0/js/vapi-background.js, line 268: Script terminated by timeout at:
+vAPI.isBehindTheSceneTabId@moz-extension://37c20367-45ba-4704-b999-14fe3647e5f0/js/vapi-background.js:268:1
+TabContext.prototype.onCommit@moz-extension://37c20367-45ba-4704-b999-14fe3647e5f0/js/tab.js:652:19
+TabContext/this.commitTimer<@moz-extension://37c20367-45ba-4704-b999-14fe3647e5f0/js/tab.js:616:18
+on/this.timer<@moz-extension://37c20367-45ba-4704-b999-14fe3647e5f0/js/vapi-common.js:59:22
+
+Dynamically enable window occlusion 1

@@ -1,26 +1,29 @@
-1717011460516	geckodriver	INFO	Listening on 127.0.0.1:63882
-1717011461102	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63883" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofilebTMDyq"
+1717603792023	geckodriver	INFO	Listening on 127.0.0.1:56057
+1717603792605	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56058" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofilexbUsSF"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1717011461546	Marionette	INFO	Marionette enabled
-1717011461657	Marionette	INFO	Listening on port 63890
-WebDriver BiDi listening on ws://127.0.0.1:63883
-Read port: 63890
-1717011461826	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:63883/devtools/browser/882b615e-57e2-42f3-b357-093a15ac3e21
-1717011472498	Marionette	INFO	Stopped listening on port 63890
-JavaScript warning: https://www.youtube.com/s/player/79e6d03a/player_ias.vflset/de_DE/base.js, line 1946: Script terminated by timeout at:
-g.BA/<@https://www.youtube.com/s/player/79e6d03a/player_ias.vflset/de_DE/base.js:1946:49
+1717603793113	Marionette	INFO	Marionette enabled
+1717603793226	Marionette	INFO	Listening on port 56065
+WebDriver BiDi listening on ws://127.0.0.1:56058
+Read port: 56065
+1717603793413	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56058/devtools/browser/1abc21c1-fe38-49f7-938c-5e1784e309e5
+JavaScript error: https://thetestingworld.com/index.php?option=com_contact&view=contact&id=1&Itemid=498, line 61: ReferenceError: Recaptcha is not defined
+JavaScript warning: https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js, line 13209: Script terminated by timeout at:
+g.k.yb@https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js:13209:16
+a1@https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js:7448:27
+g.k.YF@https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js:13345:56
+g.k.publish@https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js:8732:288
+g.WE.prototype.publish@https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js:9120:74
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js:13014:75
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js:11079:62
+BT/a.state.B[b]@https://www.youtube.com/s/player/4b63a6a1/player_ias.vflset/de_DE/base.js:5044:53
+Lx/<@https://www.youtube.com/s/player/4b63a6a1/www-embed-player.vflset/www-embed-player.js:1880:106
+Xx@https://www.youtube.com/s/player/4b63a6a1/www-embed-player.vflset/www-embed-player.js:1916:46
+@https://www.youtube.com/s/player/4b63a6a1/www-embed-player.vflset/www-embed-player.js:1924:137
+fl/<@https://www.youtube.com/s/player/4b63a6a1/www-embed-player.vflset/www-embed-player.js:906:63
 
-JavaScript warning: moz-extension://cfd5b9e3-e92e-49a9-8b7b-83effd57258f/js/vapi-common.js, line 58: Script terminated by timeout at:
-on/this.timer<@moz-extension://cfd5b9e3-e92e-49a9-8b7b-83effd57258f/js/vapi-common.js:58:17
-
-JavaScript warning: https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-vendor.js, line 2: Script terminated by timeout at:
-set@https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-vendor.js:2:8154
-2b0e/</Bn/Un.set@https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-vendor.js:2:32467
-f604/</isReconnecting/<@https://embed.tawk.to/_s/v4/app/6655a7be8ee/js/twk-chunk-24d8db78.js:2:98695
-
+JavaScript warning: https://www.google.com/js/th/6jbWxgyWtoJcj-L-FPxUQ7wDTDXAc9viBJz9v4GziSw.js line 2 > eval line 7196 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1717603838911	Marionette	INFO	Stopped listening on port 56065
 Dynamically enable window occlusion 1
-JavaScript warning: https://www.google.com/js/th/eibAoDspQrxJEgfHXHg_r2ZFWrvhsrgEHNatK7QQLfo.js line 2 > eval line 2710 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript warning: https://www.google.com/js/th/eibAoDspQrxJEgfHXHg_r2ZFWrvhsrgEHNatK7QQLfo.js line 2 > eval line 6046 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
