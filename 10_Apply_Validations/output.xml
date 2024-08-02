@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-06-05T18:36:53.619063" rpa="false" schemaversion="5">
+<suite id="s1" name="10 04 Validations" source="C:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\10_Apply_Validations\10_04_Validations.robot">
+<test id="s1-t1" name="TC_10_04_01 Validate Text" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:36:53.856333" level="INFO">Opening browser 'Firefox' to base url 'https://thetestingworld.com/testings'.</msg>
+<msg time="2024-06-05T18:36:54.488120" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-06-05T18:36:54.489139" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<arg>${var1}</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T18:36:53.856333" elapsed="5.205299"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T18:36:59.062646" elapsed="0.298567"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:36:59.363228" level="INFO">Verifying element 'xpath://div[@id='tab-content1']/p' contains exact text 'Register now and kick start your career as a Software Testing Pro!'.</msg>
+<arg>xpath://div[@id='tab-content1']/p</arg>
+<arg>Register now and kick start your career as a Software Testing Pro!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-05T18:36:59.362219" elapsed="0.025606"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:36:59.399309" level="INFO">Element 'xpath://div[@id='tab-content1']/p' contains text 'Software Testing'.</msg>
+<arg>xpath://div[@id='tab-content1']/p</arg>
+<arg>Software Testing</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-06-05T18:36:59.387825" elapsed="0.011484"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:36:59.400323" level="INFO">Typing text 'Hello' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>Hello</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-05T18:36:59.400323" elapsed="0.099694"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-05T18:36:59.501016" elapsed="0.797487"/>
+</kw>
+<status status="PASS" start="2024-06-05T18:36:53.855324" elapsed="6.444190"/>
+</test>
+<test id="s1-t2" name="TC_10_04_02 Validate Title" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:37:00.300627" level="INFO">Opening browser 'Firefox' to base url 'https://thetestingworld.com/testings'.</msg>
+<msg time="2024-06-05T18:37:00.914192" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-06-05T18:37:00.914192" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<arg>${var1}</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T18:37:00.300627" elapsed="5.160351"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T18:37:05.461989" elapsed="0.288656"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:37:05.752928" level="INFO">Page title is 'Login &amp; Sign Up Forms'.</msg>
+<arg>Login &amp; Sign Up Forms</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-06-05T18:37:05.751680" elapsed="0.001248"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-05T18:37:05.754156" elapsed="0.931758"/>
+</kw>
+<status status="PASS" start="2024-06-05T18:37:00.299514" elapsed="6.386400"/>
+</test>
+<test id="s1-t3" name="TC_10_04_03 Element enabled" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:37:06.687915" level="INFO">Opening browser 'Firefox' to base url 'https://thetestingworld.com/testings'.</msg>
+<msg time="2024-06-05T18:37:07.282359" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-06-05T18:37:07.283357" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<arg>${var1}</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T18:37:06.687915" elapsed="5.725006"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T18:37:12.412921" elapsed="0.277770"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>name:fld_username</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-06-05T18:37:12.691689" elapsed="0.026758"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-05T18:37:12.719445" elapsed="0.771295"/>
+</kw>
+<status status="PASS" start="2024-06-05T18:37:06.686914" elapsed="6.804909"/>
+</test>
+<test id="s1-t4" name="TC_10_04_03 Element visible" line="28">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:37:13.492830" level="INFO">Opening browser 'Firefox' to base url 'https://thetestingworld.com/testings'.</msg>
+<msg time="2024-06-05T18:37:14.131073" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-06-05T18:37:14.132083" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<arg>${var1}</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T18:37:13.492830" elapsed="5.075823"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-05T18:37:18.569682" elapsed="0.277104"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-06-05T18:37:18.864950" level="INFO">Element 'name:fld_username' is displayed.</msg>
+<arg>name:fld_username</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-05T18:37:18.846786" elapsed="0.018164"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-05T18:37:18.865453" elapsed="0.766573"/>
+</kw>
+<status status="PASS" start="2024-06-05T18:37:13.492830" elapsed="6.139196"/>
+</test>
+<status status="PASS" start="2024-06-05T18:36:53.621413" elapsed="26.011623"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="10 04 Validations">10 04 Validations</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-05T18:36:54.488120" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-06-05T18:36:54.489139" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<msg time="2024-06-05T18:37:00.914192" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-06-05T18:37:00.914192" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<msg time="2024-06-05T18:37:07.282359" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-06-05T18:37:07.283357" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<msg time="2024-06-05T18:37:14.131073" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-06-05T18:37:14.132083" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+</errors>
+</robot>
