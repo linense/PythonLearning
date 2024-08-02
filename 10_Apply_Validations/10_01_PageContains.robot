@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * Settings ***
 Library    SeleniumLibrary
 

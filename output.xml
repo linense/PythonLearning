@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-06-05T18:35:37.698069" rpa="false" schemaversion="5">
-<suite id="s1" name="10 04 Validations" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\10_Apply_Validations\10_04_Validations.robot">
-<test id="s1-t1" name="TC_10_04_01 Validate Text" line="8">
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-02T21:02:03.569014" rpa="false" schemaversion="5">
+<suite id="s1" name="11 03 KeywordWithReturnValue" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\11_Create_Resource_Files\11_03_KeywordWithReturnValue.robot">
+<test id="s1-t1" name="Keyword Test Case" line="10">
+<kw name="Start Browser and Maximize" owner="Resources3">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-05T18:35:37.961274" level="INFO">Opening browser 'Firefox' to base url 'https://thetestingworld.com/testings'.</msg>
-<msg time="2024-06-05T18:35:38.587895" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
-<msg time="2024-06-05T18:35:38.588912" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
-<arg>${var1}</arg>
-<arg>Firefox</arg>
+<msg time="2024-08-02T21:02:03.932545" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<msg time="2024-08-02T21:02:04.549942" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-08-02T21:02:04.550952" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-05T18:35:37.960195" elapsed="5.199212"/>
+<status status="PASS" start="2024-08-02T21:02:03.932545" elapsed="5.853768"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-05T18:35:43.160412" elapsed="0.291653"/>
+<status status="PASS" start="2024-08-02T21:02:09.787318" elapsed="0.273505"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-05T18:35:43.453396" level="INFO">Verifying element 'xpath://div[@id='tab-content1']/p' contains exact text 'Register now and kick start your career as a Software Testing Pro!'.</msg>
-<arg>xpath://div[@id='tab-content1']/p</arg>
-<arg>Register now and kick start your career as a Software Testing Pro!</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-06-05T18:35:43.453396" elapsed="0.021998"/>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-08-02T21:02:10.065217" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-08-02T21:02:10.060823" elapsed="0.004394"/>
 </kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-05T18:35:43.488538" level="INFO">Element 'xpath://div[@id='tab-content1']/p' contains text 'Software Testing'.</msg>
-<arg>xpath://div[@id='tab-content1']/p</arg>
-<arg>Software Testing</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2024-06-05T18:35:43.476485" elapsed="0.012053"/>
+<return>
+<value>${Title}</value>
+<status status="PASS" start="2024-08-02T21:02:10.065217" elapsed="0.000000"/>
+</return>
+<msg time="2024-08-02T21:02:10.066651" level="INFO">${Res} = Login &amp; Sign Up Forms</msg>
+<var>${Res}</var>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2024-08-02T21:02:03.931546" elapsed="6.136136"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-02T21:02:10.067682" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Res}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-02T21:02:10.067682" elapsed="0.001014"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-05T18:35:43.489550" level="INFO">Typing text 'Hello' into text field 'name:fld_username'.</msg>
+<msg time="2024-08-02T21:02:10.069727" level="INFO">Typing text 'Login &amp; Sign Up Forms' into text field 'name:fld_username'.</msg>
 <arg>name:fld_username</arg>
-<arg>Hello</arg>
+<arg>${Res}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-05T18:35:43.489550" elapsed="0.104749"/>
+<status status="PASS" start="2024-08-02T21:02:10.068696" elapsed="0.108834"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-05T18:35:43.595299" elapsed="0.957863"/>
-</kw>
-<status status="PASS" start="2024-06-05T18:35:37.959083" elapsed="6.594079"/>
+<status status="PASS" start="2024-08-02T21:02:03.930550" elapsed="6.247978"/>
 </test>
-<status status="PASS" start="2024-06-05T18:35:37.704666" elapsed="6.849506"/>
+<status status="PASS" start="2024-08-02T21:02:03.576782" elapsed="6.603066"/>
 </suite>
 <statistics>
 <total>
@@ -51,11 +56,12 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="10 04 Validations">10 04 Validations</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="11 03 KeywordWithReturnValue">11 03 KeywordWithReturnValue</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-06-05T18:35:38.587895" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
-<msg time="2024-06-05T18:35:38.588912" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<msg time="2024-08-02T21:02:03.927038" level="WARN">Error in file 'c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\Resources\Resources3.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-08-02T21:02:04.549942" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-08-02T21:02:04.550952" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
 </errors>
 </robot>
