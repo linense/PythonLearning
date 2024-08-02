@@ -6,7 +6,7 @@ ${var1}    https://thetestingworld.com/testings
 
 *** Test Cases ***
 TC_10_04_01 Validate Text
-    Open Browser    ${var1}    Firefox
+    Open Browser    ${var1}    Chrome
     Maximize Browser Window
     Element Text Should Be    xpath://div[@id='tab-content1']/p    Register now and kick start your career as a Software Testing Pro!
     Element Should Contain    xpath://div[@id='tab-content1']/p    Software Testing

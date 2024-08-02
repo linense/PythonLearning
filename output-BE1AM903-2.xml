@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-02T09:50:43.342130" rpa="false" schemaversion="5">
+<suite id="s1" name="10 04 Validations" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\10_Apply_Validations\10_04_Validations.robot">
+<test id="s1-t1" name="TC_10_04_01 Validate Text" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-02T09:50:43.660193" level="INFO">Opening browser 'Chrome' to base url 'https://thetestingworld.com/testings'.</msg>
+<msg time="2024-08-02T09:50:44.553721" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)</msg>
+<msg time="2024-08-02T09:50:44.555751" level="WARN">The chromedriver version (2.35.528161) detected in PATH at C:\Program Files\Wpy64-31230\python-3.12.3.amd64\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.89); currently, chromedriver  is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-02T09:50:44.559750" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+<msg time="2024-08-02T09:50:47.232475" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-08-02T09:50:47.232475" level="FAIL">SessionNotCreatedException: Message: session not created exception: Missing or invalid capabilities
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.22631 x86_64)
+</msg>
+<arg>${var1}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-08-02T09:50:43.659189" elapsed="3.581320">SessionNotCreatedException: Message: session not created exception: Missing or invalid capabilities
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.22631 x86_64)
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-08-02T09:50:47.241512" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>xpath://div[@id='tab-content1']/p</arg>
+<arg>Register now and kick start your career as a Software Testing Pro!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2024-08-02T09:50:47.241512" elapsed="0.000000"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>xpath://div[@id='tab-content1']/p</arg>
+<arg>Software Testing</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-08-02T09:50:47.242508" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:fld_username</arg>
+<arg>Hello</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-02T09:50:47.243511" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-08-02T09:50:47.243511" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-08-02T09:50:43.658192" elapsed="3.586712">SessionNotCreatedException: Message: session not created exception: Missing or invalid capabilities
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.22631 x86_64)
+</status>
+</test>
+<status status="FAIL" start="2024-08-02T09:50:43.349808" elapsed="3.896280"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="10 04 Validations">10 04 Validations</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-02T09:50:44.553721" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)</msg>
+<msg time="2024-08-02T09:50:44.555751" level="WARN">The chromedriver version (2.35.528161) detected in PATH at C:\Program Files\Wpy64-31230\python-3.12.3.amd64\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.89); currently, chromedriver  is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-02T09:50:44.559750" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+</errors>
+</robot>
