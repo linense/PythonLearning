@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240503 06:33:15.727" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240803 09:42:48.285" rpa="false" schemaversion="4">
 <suite id="s1" name="PythonLearning" source="D:\OneDrive\Python\PythonLearning">
-<suite id="s1-s1" name="21 FetchData" source="D:\OneDrive\Python\PythonLearning\21_FetchData">
-<suite id="s1-s1-s1" name="TC 001 Start Close Browser" source="D:\OneDrive\Python\PythonLearning\21_FetchData\TC_001_Start_Close_Browser.robot">
-<test id="s1-s1-s1-t1" name="TC_001 Browser Start Close" line="10">
-<kw name="Open Browser" library="SeleniumLibrary">
+<suite id="s1-s1" name="12 DetailsWithKeyword" source="D:\OneDrive\Python\PythonLearning\12_DetailsWithKeyword">
+<suite id="s1-s1-s1" name="12 02 Timeout" source="D:\OneDrive\Python\PythonLearning\12_DetailsWithKeyword\12_02_Timeout.robot">
+<test id="s1-s1-s1-t1" name="Keyword Test Case" line="12">
+<kw name="Start Browser and Maximize" library="Resources3">
+<var>${Res}</var>
 <arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Documentation is to open a browser and maximize the browser window</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240503 06:33:16.475" level="INFO">Opening browser 'firefox' to base url 'https://www.mozilla.org/de/'.</msg>
-<status status="PASS" starttime="20240503 06:33:16.472" endtime="20240503 06:33:31.343"/>
+<msg timestamp="20240803 09:42:49.347" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20240803 09:42:49.342" endtime="20240803 09:43:03.898"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240503 06:33:31.385" endtime="20240503 06:33:37.546"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240803 09:43:03.899" endtime="20240803 09:43:04.691"/>
 </kw>
-<status status="PASS" starttime="20240503 06:33:16.467" endtime="20240503 06:33:37.549"/>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240803 09:43:04.708" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240803 09:43:04.692" endtime="20240803 09:43:04.708"/>
+</kw>
+<msg timestamp="20240803 09:43:04.709" level="INFO">${Res} = Login &amp; Sign Up Forms</msg>
+<timeout value="50 seconds"/>
+<status status="PASS" starttime="20240803 09:42:49.339" endtime="20240803 09:43:04.710"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Res}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240803 09:43:04.721" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240803 09:43:04.719" endtime="20240803 09:43:04.722"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:fld_username</arg>
+<arg>${Res}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240803 09:43:04.732" level="INFO">Typing text 'Login &amp; Sign Up Forms' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20240803 09:43:04.724" endtime="20240803 09:43:05.190"/>
+</kw>
+<doc>This test case is to check registration functionality of application</doc>
+<timeout value="50 seconds"/>
+<status status="PASS" starttime="20240803 09:42:49.335" endtime="20240803 09:43:05.200"/>
 </test>
-<status status="PASS" starttime="20240503 06:33:15.832" endtime="20240503 06:33:37.554"/>
+<doc>This file tests abc functionality</doc>
+<status status="PASS" starttime="20240803 09:42:48.431" endtime="20240803 09:43:05.207"/>
 </suite>
-<status status="PASS" starttime="20240503 06:33:15.820" endtime="20240503 06:33:37.563"/>
+<status status="PASS" starttime="20240803 09:42:48.416" endtime="20240803 09:43:05.217"/>
 </suite>
-<status status="PASS" starttime="20240503 06:33:15.737" endtime="20240503 06:33:37.570"/>
+<status status="PASS" starttime="20240803 09:42:48.340" endtime="20240803 09:43:05.226"/>
 </suite>
 <statistics>
 <total>
@@ -30,8 +62,8 @@
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="PythonLearning">PythonLearning</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="21 FetchData">PythonLearning.21 FetchData</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC 001 Start Close Browser">PythonLearning.21 FetchData.TC 001 Start Close Browser</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="12 DetailsWithKeyword">PythonLearning.12 DetailsWithKeyword</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="12 02 Timeout">PythonLearning.12 DetailsWithKeyword.12 02 Timeout</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240803 09:27:23.301" rpa="false" schemaversion="4">
+<suite id="s1" name="12 01 Documentation" source="D:\OneDrive\Python\PythonLearning\12_DetailsWithKeyword\12_01_Documentation.robot">
+<test id="s1-t1" name="Keyword Test Case" line="11">
+<kw name="Start Browser and Maximize" library="Resources3">
+<var>${Res}</var>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Documentation is to open a browser and maximize the browser window</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240803 09:27:24.075" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20240803 09:27:24.074" endtime="20240803 09:27:38.127"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240803 09:27:38.128" endtime="20240803 09:27:38.547"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240803 09:27:38.562" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240803 09:27:38.547" endtime="20240803 09:27:38.562"/>
+</kw>
+<msg timestamp="20240803 09:27:38.562" level="INFO">${Res} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240803 09:27:24.073" endtime="20240803 09:27:38.562"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Res}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240803 09:27:38.566" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240803 09:27:38.565" endtime="20240803 09:27:38.566"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:fld_username</arg>
+<arg>${Res}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240803 09:27:38.569" level="INFO">Typing text 'Login &amp; Sign Up Forms' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20240803 09:27:38.567" endtime="20240803 09:27:39.031"/>
+</kw>
+<doc>This test case is to check registration functionality of application</doc>
+<status status="PASS" starttime="20240803 09:27:24.072" endtime="20240803 09:27:39.069"/>
+</test>
+<doc>This file tests abc functionality</doc>
+<status status="PASS" starttime="20240803 09:27:23.306" endtime="20240803 09:27:39.164"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="12 01 Documentation">12 01 Documentation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
