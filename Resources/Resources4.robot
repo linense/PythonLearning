@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Start Browser and Maximize
-    Open Browser    http://www.thetestingworld.com    Firefox
+    Open Browser    http://www.thetestingworld.com/testings    Firefox
     Maximize Browser Window
     
 Close Browser Window
