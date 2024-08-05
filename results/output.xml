@@ -1,114 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240804 07:51:57.064" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240805 22:13:34.852" rpa="false" schemaversion="4">
 <suite id="s1" name="PythonLearning" source="D:\OneDrive\Python\PythonLearning">
 <suite id="s1-s1" name="12 DetailsWithKeyword" source="D:\OneDrive\Python\PythonLearning\12_DetailsWithKeyword">
-<suite id="s1-s1-s1" name="12 03 SetupTeardown" source="D:\OneDrive\Python\PythonLearning\12_DetailsWithKeyword\12_03_SetupTeardown.robot">
-<test id="s1-s1-s1-t1" name="Setup Test Case" line="14">
+<suite id="s1-s1-s1" name="12 06 SuiteSetupTeardown" source="D:\OneDrive\Python\PythonLearning\12_DetailsWithKeyword\12_06_SuiteSetupTeardown.robot">
+<kw name="Before Each Test Suite" library="Resources4" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240805 22:13:38.819" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20240805 22:13:38.817" endtime="20240805 22:13:38.820"/>
+</kw>
+<status status="PASS" starttime="20240805 22:13:38.790" endtime="20240805 22:13:38.821"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Setup Test Case" line="15">
 <kw name="Start Browser and Maximize" library="Resources4" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://www.thetestingworld.com/testings</arg>
 <arg>Firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240804 07:51:58.719" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
-<status status="PASS" starttime="20240804 07:51:58.715" endtime="20240804 07:52:20.088"/>
+<msg timestamp="20240805 22:13:38.835" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20240805 22:13:38.831" endtime="20240805 22:14:06.375"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20240804 07:52:20.093" endtime="20240804 07:52:20.399"/>
+<status status="PASS" starttime="20240805 22:14:06.376" endtime="20240805 22:14:06.657"/>
 </kw>
-<status status="PASS" starttime="20240804 07:51:58.713" endtime="20240804 07:52:20.400"/>
+<status status="PASS" starttime="20240805 22:13:38.829" endtime="20240805 22:14:06.659"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:fld_username</arg>
 <arg>testings</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240804 07:52:20.445" level="INFO">Typing text 'testings' into text field 'name:fld_username'.</msg>
-<status status="PASS" starttime="20240804 07:52:20.437" endtime="20240804 07:52:21.095"/>
+<msg timestamp="20240805 22:14:06.700" level="INFO">Typing text 'testings' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20240805 22:14:06.697" endtime="20240805 22:14:07.752"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:fld_email</arg>
 <arg>testingworldindia@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240804 07:52:21.120" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'name:fld_email'.</msg>
-<status status="PASS" starttime="20240804 07:52:21.118" endtime="20240804 07:52:21.443"/>
+<msg timestamp="20240805 22:14:07.835" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'name:fld_email'.</msg>
+<status status="PASS" starttime="20240805 22:14:07.825" endtime="20240805 22:14:08.269"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:fld_password</arg>
 <arg>123456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240804 07:52:21.520" level="INFO">Typing text '123456' into text field 'name:fld_password'.</msg>
-<status status="PASS" starttime="20240804 07:52:21.518" endtime="20240804 07:52:21.718"/>
+<msg timestamp="20240805 22:14:08.291" level="INFO">Typing text '123456' into text field 'name:fld_password'.</msg>
+<status status="PASS" starttime="20240805 22:14:08.288" endtime="20240805 22:14:08.440"/>
 </kw>
 <kw name="Close Browser Window" library="Resources4" type="TEARDOWN">
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${Title}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20240804 07:52:21.739" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
-<status status="PASS" starttime="20240804 07:52:21.731" endtime="20240804 07:52:21.739"/>
+<msg timestamp="20240805 22:14:08.531" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240805 22:14:08.523" endtime="20240805 22:14:08.531"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${Title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240804 07:52:21.746" level="INFO">Login &amp; Sign Up Forms</msg>
-<status status="PASS" starttime="20240804 07:52:21.741" endtime="20240804 07:52:21.748"/>
+<msg timestamp="20240805 22:14:08.534" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240805 22:14:08.532" endtime="20240805 22:14:08.536"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240804 07:52:21.749" endtime="20240804 07:52:27.291"/>
+<status status="PASS" starttime="20240805 22:14:08.536" endtime="20240805 22:14:17.316"/>
 </kw>
-<status status="PASS" starttime="20240804 07:52:21.729" endtime="20240804 07:52:27.291"/>
+<status status="PASS" starttime="20240805 22:14:08.520" endtime="20240805 22:14:17.317"/>
 </kw>
-<status status="PASS" starttime="20240804 07:51:58.707" endtime="20240804 07:52:27.292"/>
+<status status="PASS" starttime="20240805 22:13:38.821" endtime="20240805 22:14:17.323"/>
 </test>
-<test id="s1-s1-s1-t2" name="Second Setup Test Case" line="19">
+<test id="s1-s1-s1-t2" name="Second Setup Test Case" line="20">
 <kw name="Start Browser and Maximize" library="Resources4" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://www.thetestingworld.com/testings</arg>
 <arg>Firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240804 07:52:27.307" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
-<status status="PASS" starttime="20240804 07:52:27.305" endtime="20240804 07:52:40.891"/>
+<msg timestamp="20240805 22:14:17.334" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20240805 22:14:17.332" endtime="20240805 22:14:39.019"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20240804 07:52:40.892" endtime="20240804 07:52:41.201"/>
+<status status="PASS" starttime="20240805 22:14:39.021" endtime="20240805 22:14:39.426"/>
 </kw>
-<status status="PASS" starttime="20240804 07:52:27.302" endtime="20240804 07:52:41.203"/>
+<status status="PASS" starttime="20240805 22:14:17.330" endtime="20240805 22:14:39.427"/>
 </kw>
 <kw name="Select Radio Button" library="SeleniumLibrary">
 <arg>add_type</arg>
 <arg>office</arg>
 <doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20240804 07:52:41.215" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
-<status status="PASS" starttime="20240804 07:52:41.207" endtime="20240804 07:52:41.554"/>
+<msg timestamp="20240805 22:14:39.456" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<status status="PASS" starttime="20240805 22:14:39.455" endtime="20240805 22:14:40.082"/>
 </kw>
 <kw name="Close Browser Window" library="Resources4" type="TEARDOWN">
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${Title}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20240804 07:52:41.583" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
-<status status="PASS" starttime="20240804 07:52:41.571" endtime="20240804 07:52:41.584"/>
+<msg timestamp="20240805 22:14:40.102" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240805 22:14:40.089" endtime="20240805 22:14:40.102"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${Title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240804 07:52:41.586" level="INFO">Login &amp; Sign Up Forms</msg>
-<status status="PASS" starttime="20240804 07:52:41.585" endtime="20240804 07:52:41.587"/>
+<msg timestamp="20240805 22:14:40.105" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240805 22:14:40.103" endtime="20240805 22:14:40.106"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240804 07:52:41.588" endtime="20240804 07:52:47.489"/>
+<status status="PASS" starttime="20240805 22:14:40.106" endtime="20240805 22:14:46.213"/>
 </kw>
-<status status="PASS" starttime="20240804 07:52:41.564" endtime="20240804 07:52:47.489"/>
+<status status="PASS" starttime="20240805 22:14:40.087" endtime="20240805 22:14:46.213"/>
 </kw>
-<status status="PASS" starttime="20240804 07:52:27.296" endtime="20240804 07:52:47.491"/>
+<status status="PASS" starttime="20240805 22:14:17.326" endtime="20240805 22:14:46.214"/>
 </test>
+<kw name="After Each Test Suite" library="Resources4" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240805 22:14:46.224" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20240805 22:14:46.223" endtime="20240805 22:14:46.225"/>
+</kw>
+<status status="PASS" starttime="20240805 22:14:46.221" endtime="20240805 22:14:46.226"/>
+</kw>
 <doc>This file uses Setup and Teardown functionality</doc>
-<status status="PASS" starttime="20240804 07:51:57.237" endtime="20240804 07:52:47.496"/>
+<status status="PASS" starttime="20240805 22:13:35.195" endtime="20240805 22:14:46.226"/>
 </suite>
-<status status="PASS" starttime="20240804 07:51:57.216" endtime="20240804 07:52:47.505"/>
+<status status="PASS" starttime="20240805 22:13:35.179" endtime="20240805 22:14:46.244"/>
 </suite>
-<status status="PASS" starttime="20240804 07:51:57.123" endtime="20240804 07:52:47.518"/>
+<status status="PASS" starttime="20240805 22:13:34.922" endtime="20240805 22:14:46.262"/>
 </suite>
 <statistics>
 <total>
@@ -119,7 +137,7 @@
 <suite>
 <stat pass="2" fail="0" skip="0" id="s1" name="PythonLearning">PythonLearning</stat>
 <stat pass="2" fail="0" skip="0" id="s1-s1" name="12 DetailsWithKeyword">PythonLearning.12 DetailsWithKeyword</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="12 03 SetupTeardown">PythonLearning.12 DetailsWithKeyword.12 03 SetupTeardown</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="12 06 SuiteSetupTeardown">PythonLearning.12 DetailsWithKeyword.12 06 SuiteSetupTeardown</stat>
 </suite>
 </statistics>
 <errors>
