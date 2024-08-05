@@ -13,3 +13,10 @@ Close Browser Window
     ${Title}=   Get Title
     Log     ${Title}
     Close Browser
+
+Before Each Test Suite
+    Log     Before Each Test Suite
+
+After Each Test Suite
+    Log     After Each Test Suite
+    
