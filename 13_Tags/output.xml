@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240809 22:06:28.811" rpa="false" schemaversion="4">
+<suite id="s1" name="13 02 Default and forced tags" source="D:\OneDrive\Python\PythonLearning\13_Tags\13_02_Default_and_forced_tags.robot">
+<test id="s1-t1" name="Keyword Test Case" line="13">
+<kw name="Start Browser and Maximize" library="Resources3">
+<var>${Res}</var>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Documentation is to open a browser and maximize the browser window</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240809 22:06:29.621" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20240809 22:06:29.617" endtime="20240809 22:06:47.945"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240809 22:06:47.945" endtime="20240809 22:06:48.387"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240809 22:06:48.428" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240809 22:06:48.387" endtime="20240809 22:06:48.429"/>
+</kw>
+<msg timestamp="20240809 22:06:48.429" level="INFO">${Res} = Login &amp; Sign Up Forms</msg>
+<timeout value="50 seconds"/>
+<status status="PASS" starttime="20240809 22:06:29.616" endtime="20240809 22:06:48.429"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Res}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240809 22:06:48.436" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240809 22:06:48.436" endtime="20240809 22:06:48.436"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:fld_username</arg>
+<arg>${Res}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240809 22:06:48.442" level="INFO">Typing text 'Login &amp; Sign Up Forms' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20240809 22:06:48.440" endtime="20240809 22:06:48.883"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240809 22:06:48.887" endtime="20240809 22:06:54.292"/>
+</kw>
+<doc>This is the first test case of the suite</doc>
+<tag>ALL_TC</tag>
+<tag>Regression</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20240809 22:06:29.614" endtime="20240809 22:06:54.294"/>
+</test>
+<test id="s1-t2" name="Second Test Case" line="21">
+<kw name="Start Browser and Maximize" library="Resources3">
+<var>${Res}</var>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Documentation is to open a browser and maximize the browser window</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240809 22:06:54.303" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20240809 22:06:54.300" endtime="20240809 22:07:10.685"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240809 22:07:10.685" endtime="20240809 22:07:11.220"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240809 22:07:11.228" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240809 22:07:11.220" endtime="20240809 22:07:11.228"/>
+</kw>
+<msg timestamp="20240809 22:07:11.229" level="INFO">${Res} = Login &amp; Sign Up Forms</msg>
+<timeout value="50 seconds"/>
+<status status="PASS" starttime="20240809 22:06:54.298" endtime="20240809 22:07:11.229"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>add_type</arg>
+<arg>office</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20240809 22:07:11.242" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<status status="PASS" starttime="20240809 22:07:11.241" endtime="20240809 22:07:11.598"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240809 22:07:11.599" endtime="20240809 22:07:17.713"/>
+</kw>
+<doc>This is the second test case of the suite</doc>
+<tag>ALL_TC</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<status status="PASS" starttime="20240809 22:06:54.297" endtime="20240809 22:07:17.714"/>
+</test>
+<test id="s1-t3" name="Third Test Case" line="29">
+<kw name="Start Browser and Maximize" library="Resources3">
+<var>${Res}</var>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Documentation is to open a browser and maximize the browser window</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240809 22:07:17.723" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20240809 22:07:17.720" endtime="20240809 22:07:31.427"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240809 22:07:31.428" endtime="20240809 22:07:31.735"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240809 22:07:31.741" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240809 22:07:31.735" endtime="20240809 22:07:31.741"/>
+</kw>
+<msg timestamp="20240809 22:07:31.742" level="INFO">${Res} = Login &amp; Sign Up Forms</msg>
+<timeout value="50 seconds"/>
+<status status="PASS" starttime="20240809 22:07:17.719" endtime="20240809 22:07:31.742"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>add_type</arg>
+<arg>office</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20240809 22:07:31.744" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<status status="PASS" starttime="20240809 22:07:31.743" endtime="20240809 22:07:32.104"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240809 22:07:32.105" endtime="20240809 22:07:36.674"/>
+</kw>
+<doc>This is the third test case of the suite</doc>
+<tag>ALL_TC</tag>
+<tag>DFLT</tag>
+<status status="PASS" starttime="20240809 22:07:17.718" endtime="20240809 22:07:36.675"/>
+</test>
+<doc>This Suite shows how to apply tags</doc>
+<status status="PASS" starttime="20240809 22:06:28.816" endtime="20240809 22:07:36.678"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">ALL_TC</stat>
+<stat pass="1" fail="0" skip="0">DFLT</stat>
+<stat pass="2" fail="0" skip="0">Regression</stat>
+<stat pass="1" fail="0" skip="0">Sanity</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="13 02 Default and forced tags">13 02 Default and forced tags</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
