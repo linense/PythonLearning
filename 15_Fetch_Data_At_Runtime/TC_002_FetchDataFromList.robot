@@ -10,17 +10,16 @@ ${Browser}    Firefox
 ${URL}    http://www.thetestingworld.com/testings
 
 *** Test Cases ***
-Robot Fetch Data
-    [Documentation]     This is the Robot Fetch Data test case
+Robot Fetch Data From List
+    [Documentation]     This test case fetches data from a list
     Open Browser  ${URL}  ${Browser}
-    
     Maximize Browser Window
-    Input Text    name:fld_username    Testing
-    Input Text    name:fld_email    testingworldindia@gmail.com
-    Input Text    name:fld_password  123456
-    
-    ${title}=    Get Title
-    Log    ${title}
-    
+    Select From List By Index    name:sex    1
+    ${Val}=    Get Selected List Value    name:sex
+    Log    ${Val}
+    ${Text}=    Get Selected List Label    name:sex
+    Log    ${Text}
+    ${AllLabels}=    Get List Items    name:sex
+    Log    ${AllLabels}
 
     Close Browser
