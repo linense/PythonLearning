@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-29T20:39:19.004880" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 001 FetchData" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\15_Fetch_Data_At_Runtime\TC_001_FetchData.robot">
+<test id="s1-t1" name="Robot Fetch Data" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-29T20:39:19.353431" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<msg time="2024-08-29T20:39:19.879518" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-08-29T20:39:19.880519" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-29T20:39:19.353431" elapsed="5.299333"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-29T20:39:24.654211" elapsed="0.293031"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T20:39:24.949239" level="INFO">Typing text 'Testing' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T20:39:24.948236" elapsed="0.049983"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T20:39:24.999230" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'name:fld_email'.</msg>
+<arg>name:fld_email</arg>
+<arg>testingworldindia@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T20:39:24.999230" elapsed="0.037179"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-29T20:39:25.037409" level="INFO">Typing text '123456' into text field 'name:fld_password'.</msg>
+<arg>name:fld_password</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-29T20:39:25.037409" elapsed="0.026520"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-29T20:39:25.063929" elapsed="1.627228"/>
+</kw>
+<doc>This is the Robot Fetch Data test case</doc>
+<status status="PASS" start="2024-08-29T20:39:19.352154" elapsed="7.340011"/>
+</test>
+<doc>This Suite shows how to apply tags</doc>
+<status status="PASS" start="2024-08-29T20:39:19.020815" elapsed="7.672755"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 001 FetchData">TC 001 FetchData</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-29T20:39:19.349154" level="WARN">Error in file 'c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\Resources\Resources3.robot' on line 15: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-08-29T20:39:19.879518" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-08-29T20:39:19.880519" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+</errors>
+</robot>

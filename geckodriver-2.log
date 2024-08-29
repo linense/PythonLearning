@@ -1,0 +1,21 @@
+1724956759964	geckodriver	INFO	Listening on 127.0.0.1:53220
+1724956760574	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53221" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofilec0k7d0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1724956761024	Marionette	INFO	Marionette enabled
+1724956761144	Marionette	INFO	Listening on port 53228
+WebDriver BiDi listening on ws://127.0.0.1:53221
+Read port: 53228
+1724956761291	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53221/devtools/browser/cf75a9cf-6a94-4e91-884d-70412db92bbd
+1724956765067	Marionette	INFO	Stopped listening on port 53228
+JavaScript warning: moz-extension://c3438139-a906-408d-a3ce-63f777ec3623/js/static-filtering-parser.js, line 2213: Script terminated by timeout at:
+parseExt@moz-extension://c3438139-a906-408d-a3ce-63f777ec3623/js/static-filtering-parser.js:2213:13
+parseFilter@moz-extension://c3438139-a906-408d-a3ce-63f777ec3623/js/static-filtering-parser.js:1155:38
+parseRaw@moz-extension://c3438139-a906-408d-a3ce-63f777ec3623/js/static-filtering-parser.js:1121:38
+parse@moz-extension://c3438139-a906-408d-a3ce-63f777ec3623/js/static-filtering-parser.js:1016:43
+µb.compileFilters@moz-extension://c3438139-a906-408d-a3ce-63f777ec3623/js/storage.js:1138:16
+µb.getCompiledFilterList@moz-extension://c3438139-a906-408d-a3ce-63f777ec3623/js/storage.js:1064:34
+
+Dynamically enable window occlusion 1
