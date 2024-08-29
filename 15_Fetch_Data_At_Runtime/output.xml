@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240829 06:33:55.544" rpa="false" schemaversion="4">
+<suite id="s1" name="TC 001 FetchData" source="D:\OneDrive\Python\PythonLearning\15_Fetch_Data_At_Runtime\TC_001_FetchData.robot">
+<test id="s1-t1" name="Robot Fetch Data" line="13">
+<kw name="Open Browser">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<msg timestamp="20240829 06:33:55.612" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20240829 06:33:55.611" endtime="20240829 06:33:55.612"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20240829 06:33:55.614" endtime="20240829 06:33:55.615"/>
+</kw>
+<kw name="Input Text">
+<arg>name:fld_username</arg>
+<arg>Testing</arg>
+<status status="NOT RUN" starttime="20240829 06:33:55.617" endtime="20240829 06:33:55.617"/>
+</kw>
+<kw name="Input Text">
+<arg>name:fld_email</arg>
+<arg>testingworldindia@gmail.com</arg>
+<status status="NOT RUN" starttime="20240829 06:33:55.627" endtime="20240829 06:33:55.627"/>
+</kw>
+<kw name="Input Text">
+<arg>name:fld_password</arg>
+<arg>123456</arg>
+<status status="NOT RUN" starttime="20240829 06:33:55.632" endtime="20240829 06:33:55.632"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" starttime="20240829 06:33:55.645" endtime="20240829 06:33:55.645"/>
+</kw>
+<doc>This is the Robot Fetch Data test case</doc>
+<status status="FAIL" starttime="20240829 06:33:55.608" endtime="20240829 06:33:55.647">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20240829 06:33:55.548" endtime="20240829 06:33:55.649"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 001 FetchData">TC 001 FetchData</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
