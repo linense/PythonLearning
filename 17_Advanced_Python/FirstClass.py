@@ -21,14 +21,12 @@ class A:
         return c
 
 
-# To call any member of the class, we have to create an object of the class
-obj=A()
+# To call any member of the class, we have to create an object of the class - removed because later on the object is created in a separate file
+# obj=A()
 
-# Call functions of the class
-obj.welcome()
-
-obj.sum(3,4)
-
-result = obj.mul(3,4)
-print("result is " + str(result))
+# Call functions of the class - removed because later on the object is created in a separate file
+#obj.welcome()
+#obj.sum(3,4)
+#result = obj.mul(3,4)
+#print("result is " + str(result))
 
