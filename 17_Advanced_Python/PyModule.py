@@ -13,5 +13,8 @@ def sum(a,b):
 
 
 class A:
+    def __init__(self):
+        print("This is the constructor")
+    
     def testingPythonClassFunction(self):
         print("This is a class function")
