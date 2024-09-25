@@ -18,3 +18,20 @@ print(c1.value)
 
 c2=sh.cell(column=3, row=2) # without these arguments, it's first row then column
 print(c2.value)
+
+# Read and print all the data
+#rows=sh.max_row
+#columns=sh.max_column
+#print("Total rows are " + str(rows))
+#print("Total columns are " + str(columns))
+#for i in range(1,rows+1):
+#    for j in range(1,columns+1):
+#        print(str(sh.cell(i,j).value))
+
+# Alternative approach
+for r in sh['A1':'C4']:
+    for c in r:
+        print(c.value)
+
+
+
