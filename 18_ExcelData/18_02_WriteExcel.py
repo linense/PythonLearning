@@ -11,7 +11,7 @@ sh1['A3']="+918743913121"
 
 # Remove Sheet
 
-#wk.remove_sheet(wk['HelloTestingWorld'])
+#wk.remove_sheet(wk['HelloTestingWorld']) => Method is deprecated
 wk.remove(wk['HelloTestingWorld'])
 
 wk.save("C:\\Users\\a315707\\OneDrive - Deutsche Telekom AG\\Schulungen\\Programmierung\\Python\\PythonLearning\\18_ExcelData\\18_02_OutputExcel.xlsx")
