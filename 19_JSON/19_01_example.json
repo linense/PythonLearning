@@ -1,0 +1,17 @@
+{
+    "Name":"Delhi",
+    "age":23,
+    "PhoneNumber":"8743-913-121",
+    "City":["Delhi", "Mumbai", "Bangalore"],
+    "Address":
+        {
+            "Streetname":"ABCD",
+            "HouseNumber":"23D",
+            "City":"Pune",
+            "Number":
+                {
+                    "Landline":"21231511",
+                    "Mobile":"42342324"
+                }
+        }
+}
