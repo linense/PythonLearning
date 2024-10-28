@@ -1,29 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-09-02T22:01:36.626419" rpa="false" schemaversion="5">
-<suite id="s1" name="16 04 UDK with Argument and Return Value" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\16_UserDefinedKeywords\16_04_UDK_with_Argument_and_Return_Value.robot">
-<test id="s1-t1" name="Robot Concatenate Values" line="11">
-<kw name="Concatenate Username and Password" owner="Resources4">
-<kw name="Concatenate Two Values" owner="UserKeywords16_03">
-<msg time="2024-09-02T22:01:36.938107" level="INFO">${resultval} = myUser myPassword</msg>
-<var>${resultval}</var>
-<arg>${username}</arg>
-<arg>${password}</arg>
-<status status="PASS" start="2024-09-02T22:01:36.937005" elapsed="0.003616"/>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-10-28T06:41:35.881636" rpa="false" schemaversion="5">
+<suite id="s1" name="21 01 ExcelImport" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\21_Read_from_Excel\21_01_ExcelImport.robot">
+<test id="s1-t1" name="TC_001 Login Logout functionality" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-28T06:41:36.378864" level="INFO">Opening browser 'firefox' to base url 'https://thetestingworld.com/testings/'.</msg>
+<msg time="2024-10-28T06:41:37.058740" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-10-28T06:41:37.059751" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
+<arg>${var1}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-28T06:41:36.377736" elapsed="5.510202"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-09-02T22:01:36.941620" level="INFO">myUser myPassword</msg>
-<arg>${resultval}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-02T22:01:36.941620" elapsed="0.000000"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-28T06:41:41.889181" level="INFO">Clicking element 'xpath:/html/body/div[4]/section/ul/li[2]/label'.</msg>
+<arg>xpath:/html/body/div[4]/section/ul/li[2]/label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-28T06:41:41.887938" elapsed="0.271122"/>
 </kw>
-<arg>myUser</arg>
-<arg>myPassword</arg>
-<status status="PASS" start="2024-09-02T22:01:36.937005" elapsed="0.004615"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-28T06:41:42.160422" level="INFO">Typing text 'testing' into text field 'name:_txtUserName'.</msg>
+<arg>name:_txtUserName</arg>
+<arg>testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-28T06:41:42.159060" elapsed="0.023507"/>
 </kw>
-<status status="PASS" start="2024-09-02T22:01:36.935699" elapsed="0.006919"/>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-28T06:41:42.183580" level="INFO">Typing password into text field 'name:_txtPassword'.</msg>
+<msg time="2024-10-28T06:41:42.194411" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:_txtPassword</arg>
+<arg>testing</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-28T06:41:42.183580" elapsed="0.019527"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-28T06:41:42.203107" level="INFO">Clicking button 'xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]'.</msg>
+<arg>xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-28T06:41:42.203107" elapsed="0.227199"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-28T06:41:47.431782" level="INFO">Slept 5 seconds.</msg>
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-28T06:41:42.430306" elapsed="5.001476"/>
+</kw>
+<status status="PASS" start="2024-10-28T06:41:36.376736" elapsed="11.055046"/>
 </test>
-<doc>This Suite uses User Defined Keywords in Python</doc>
-<status status="PASS" start="2024-09-02T22:01:36.632057" elapsed="0.321601"/>
+<status status="PASS" start="2024-10-28T06:41:35.888806" elapsed="11.545486"/>
 </suite>
 <statistics>
 <total>
@@ -32,9 +54,11 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="16 04 UDK with Argument and Return Value">16 04 UDK with Argument and Return Value</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="21 01 ExcelImport">21 01 ExcelImport</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-10-28T06:41:37.058740" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
+<msg time="2024-10-28T06:41:37.059751" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
 </errors>
 </robot>
