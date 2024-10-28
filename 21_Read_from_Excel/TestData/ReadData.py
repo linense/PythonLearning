@@ -8,8 +8,5 @@ def fetch_number_of_rows(Sheetname):
 
 def fetch_cell_data(Sheetname, row, cell):
     sh = wk[Sheetname]
-    cell = sh.cell(row,cell)
+    cell = sh.cell(int(row),int(cell))
     return cell.value
-
-print(fetch_number_of_rows("Tabelle1"))
-print(fetch_cell_data("Tabelle1",1,1))

@@ -1,0 +1,20 @@
+1730145386540	geckodriver	INFO	Listening on 127.0.0.1:56807
+1730145387136	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56808" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\a315707\\AppData\\Local\\Temp\\rust_mozprofilenrNNN2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1730145387623	Marionette	INFO	Marionette enabled
+1730145387735	Marionette	INFO	Listening on port 56815
+Read port: 56815
+WebDriver BiDi listening on ws://127.0.0.1:56808
+1730145387821	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56808/devtools/browser/6ccd77c4-bf63-4bf7-a97b-321f117fd9b4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://thetestingworld.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://thetestingworld.com."
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+1730145461410	Marionette	INFO	Stopped listening on port 56815
+Dynamically enable window occlusion 1
+console.error: "Error in worker resource://devtools/client/shared/source-map-loader/worker.js" ": "
