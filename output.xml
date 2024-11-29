@@ -1,357 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-10-28T21:02:44.273847" rpa="false" schemaversion="5">
-<suite id="s1" name="21 01 ExcelImport" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\21_Read_from_Excel\21_01_ExcelImport.robot">
-<test id="s1-t1" name="TC_001 Login Logout functionality" line="10">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:45.056380" level="INFO">Opening browser 'Firefox' to base url 'https://thetestingworld.com/testings/'.</msg>
-<msg time="2024-10-28T21:02:45.590653" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
-<msg time="2024-10-28T21:02:45.591659" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
-<arg>${var1}</arg>
-<arg>Firefox</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-28T21:02:45.055258" elapsed="5.155304"/>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-11-28T09:05:06.272444" rpa="false" schemaversion="5">
+<suite id="s1" name="29 01 Sikuli TC 001" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\29_Sikuli\29_01_Sikuli_TC_001.robot">
+<test id="s1-t1" name="TC_001 Start Browser on Windows" line="12">
+<kw name="Start Sikuli Process" owner="SikuliLibrary">
+<msg time="2024-11-28T09:05:06.610721" level="INFO">Starting process:
+java -jar "C:\Program Files\Wpy64-31230\python-3.12.3.amd64\Lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar" 53336 "C:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning"</msg>
+<msg time="2024-11-28T09:05:06.627700" level="INFO">Start sikuli java process on port 53336</msg>
+<msg time="2024-11-28T09:05:07.747543" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" start="2024-11-28T09:05:06.604613" elapsed="3.462355"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-28T21:02:50.211564" elapsed="0.285174"/>
+<kw name="Add Image Path" owner="SikuliLibrary">
+<arg>C:/Users/a315707/OneDrive - Deutsche Telekom AG/Schulungen/Programmierung/Python/PythonLearning/29_Sikuli/</arg>
+<doc>Add image path</doc>
+<status status="PASS" start="2024-11-28T09:05:10.066968" elapsed="0.029084"/>
 </kw>
-<kw name="Read Number of Rows" owner="UserKeywords">
-<kw name="Fetch Number Of Rows" owner="ReadData">
-<msg time="2024-10-28T21:02:50.499078" level="INFO">${maxr} = 4</msg>
-<var>${maxr}</var>
-<arg>${sheetname}</arg>
-<status status="PASS" start="2024-10-28T21:02:50.498072" elapsed="0.001006"/>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-11-28T09:05:11.297502" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1732781110591.png'/&gt;
+[log] CLICK on L[32,1056]@S(0) (572 msec)</msg>
+<arg>Sikuli_StartButton.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-11-28T09:05:10.096052" elapsed="1.201450"/>
 </kw>
-<return>
-<value>${maxr}</value>
-<status status="PASS" start="2024-10-28T21:02:50.500179" elapsed="0.000000"/>
-</return>
-<msg time="2024-10-28T21:02:50.500179" level="INFO">${row} = 4</msg>
-<var>${row}</var>
-<arg>Tabelle1</arg>
-<status status="PASS" start="2024-10-28T21:02:50.498072" elapsed="0.002107"/>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-11-28T09:05:12.636770" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1732781111890.png'/&gt;
+[log] CLICK on L[96,643]@S(0) (570 msec)</msg>
+<arg>Sikuli_Chrome.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-11-28T09:05:11.298498" elapsed="1.338272"/>
 </kw>
-<for flavor="IN RANGE">
-<iter>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:50.502296" level="INFO">Clicking element 'xpath:/html/body/div[4]/section/ul/li[2]/label'.</msg>
-<arg>xpath:/html/body/div[4]/section/ul/li[2]/label</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:02:50.501185" elapsed="0.256045"/>
-</kw>
-<kw name="Read Excel data from cell" owner="UserKeywords">
-<kw name="Fetch Cell Data" owner="ReadData">
-<msg time="2024-10-28T21:02:50.758229" level="INFO">${celldata} = user1</msg>
-<var>${celldata}</var>
-<arg>${sheetname}</arg>
-<arg>${row}</arg>
-<arg>${cell}</arg>
-<status status="PASS" start="2024-10-28T21:02:50.758229" elapsed="0.000000"/>
-</kw>
-<return>
-<value>${celldata}</value>
-<status status="PASS" start="2024-10-28T21:02:50.758229" elapsed="0.000000"/>
-</return>
-<msg time="2024-10-28T21:02:50.758229" level="INFO">${username} = user1</msg>
-<var>${username}</var>
-<arg>Tabelle1</arg>
-<arg>${i}</arg>
-<arg>1</arg>
-<status status="PASS" start="2024-10-28T21:02:50.757230" elapsed="0.002504"/>
-</kw>
-<kw name="Read Excel data from cell" owner="UserKeywords">
-<kw name="Fetch Cell Data" owner="ReadData">
-<msg time="2024-10-28T21:02:50.760787" level="INFO">${celldata} = pass1</msg>
-<var>${celldata}</var>
-<arg>${sheetname}</arg>
-<arg>${row}</arg>
-<arg>${cell}</arg>
-<status status="PASS" start="2024-10-28T21:02:50.760787" elapsed="0.000000"/>
-</kw>
-<return>
-<value>${celldata}</value>
-<status status="PASS" start="2024-10-28T21:02:50.760787" elapsed="0.000000"/>
-</return>
-<msg time="2024-10-28T21:02:50.760787" level="INFO">${password} = pass1</msg>
-<var>${password}</var>
-<arg>Tabelle1</arg>
-<arg>${i}</arg>
-<arg>2</arg>
-<status status="PASS" start="2024-10-28T21:02:50.759734" elapsed="0.001053"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:50.761952" level="INFO">Typing text 'user1' into text field 'name:_txtUserName'.</msg>
-<arg>name:_txtUserName</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:02:50.761952" elapsed="0.037448"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:50.800400" level="INFO">Typing password into text field 'name:_txtPassword'.</msg>
-<msg time="2024-10-28T21:02:50.824409" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>name:_txtPassword</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:02:50.799400" elapsed="0.038535"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:50.839411" level="INFO">Clicking button 'xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]'.</msg>
-<arg>xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:02:50.839411" elapsed="0.261650"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-28T21:02:56.101106" level="INFO">Slept 5 seconds.</msg>
-<arg>5 seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-28T21:02:51.101061" elapsed="5.000045"/>
-</kw>
-<var name="${i}">1</var>
-<status status="PASS" start="2024-10-28T21:02:50.501185" elapsed="5.599921"/>
-</iter>
-<iter>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:56.103139" level="INFO">Clicking element 'xpath:/html/body/div[4]/section/ul/li[2]/label'.</msg>
-<arg>xpath:/html/body/div[4]/section/ul/li[2]/label</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:02:56.102162" elapsed="0.226551"/>
-</kw>
-<kw name="Read Excel data from cell" owner="UserKeywords">
-<kw name="Fetch Cell Data" owner="ReadData">
-<msg time="2024-10-28T21:02:56.329718" level="INFO">${celldata} = user2</msg>
-<var>${celldata}</var>
-<arg>${sheetname}</arg>
-<arg>${row}</arg>
-<arg>${cell}</arg>
-<status status="PASS" start="2024-10-28T21:02:56.329718" elapsed="0.000000"/>
-</kw>
-<return>
-<value>${celldata}</value>
-<status status="PASS" start="2024-10-28T21:02:56.329718" elapsed="0.000999"/>
-</return>
-<msg time="2024-10-28T21:02:56.330717" level="INFO">${username} = user2</msg>
-<var>${username}</var>
-<arg>Tabelle1</arg>
-<arg>${i}</arg>
-<arg>1</arg>
-<status status="PASS" start="2024-10-28T21:02:56.328713" elapsed="0.002004"/>
-</kw>
-<kw name="Read Excel data from cell" owner="UserKeywords">
-<kw name="Fetch Cell Data" owner="ReadData">
-<msg time="2024-10-28T21:02:56.331717" level="INFO">${celldata} = pass2</msg>
-<var>${celldata}</var>
-<arg>${sheetname}</arg>
-<arg>${row}</arg>
-<arg>${cell}</arg>
-<status status="PASS" start="2024-10-28T21:02:56.330717" elapsed="0.001000"/>
-</kw>
-<return>
-<value>${celldata}</value>
-<status status="PASS" start="2024-10-28T21:02:56.331717" elapsed="0.000000"/>
-</return>
-<msg time="2024-10-28T21:02:56.331717" level="INFO">${password} = pass2</msg>
-<var>${password}</var>
-<arg>Tabelle1</arg>
-<arg>${i}</arg>
-<arg>2</arg>
-<status status="PASS" start="2024-10-28T21:02:56.330717" elapsed="0.001000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:56.332717" level="INFO">Typing text 'user2' into text field 'name:_txtUserName'.</msg>
-<arg>name:_txtUserName</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:02:56.331717" elapsed="0.022477"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:56.355191" level="INFO">Typing password into text field 'name:_txtPassword'.</msg>
-<msg time="2024-10-28T21:02:56.363056" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>name:_txtPassword</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:02:56.354194" elapsed="0.015163"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:02:56.370816" level="INFO">Clicking button 'xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]'.</msg>
-<arg>xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:02:56.370816" elapsed="0.211191"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-28T21:03:01.583291" level="INFO">Slept 5 seconds.</msg>
-<arg>5 seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-28T21:02:56.582007" elapsed="5.001284"/>
-</kw>
-<var name="${i}">2</var>
-<status status="PASS" start="2024-10-28T21:02:56.102162" elapsed="5.481129"/>
-</iter>
-<iter>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:03:01.584299" level="INFO">Clicking element 'xpath:/html/body/div[4]/section/ul/li[2]/label'.</msg>
-<arg>xpath:/html/body/div[4]/section/ul/li[2]/label</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:03:01.584299" elapsed="0.227633"/>
-</kw>
-<kw name="Read Excel data from cell" owner="UserKeywords">
-<kw name="Fetch Cell Data" owner="ReadData">
-<msg time="2024-10-28T21:03:01.812939" level="INFO">${celldata} = user3</msg>
-<var>${celldata}</var>
-<arg>${sheetname}</arg>
-<arg>${row}</arg>
-<arg>${cell}</arg>
-<status status="PASS" start="2024-10-28T21:03:01.812939" elapsed="0.000000"/>
-</kw>
-<return>
-<value>${celldata}</value>
-<status status="PASS" start="2024-10-28T21:03:01.812939" elapsed="0.000000"/>
-</return>
-<msg time="2024-10-28T21:03:01.813938" level="INFO">${username} = user3</msg>
-<var>${username}</var>
-<arg>Tabelle1</arg>
-<arg>${i}</arg>
-<arg>1</arg>
-<status status="PASS" start="2024-10-28T21:03:01.811932" elapsed="0.002006"/>
-</kw>
-<kw name="Read Excel data from cell" owner="UserKeywords">
-<kw name="Fetch Cell Data" owner="ReadData">
-<msg time="2024-10-28T21:03:01.814938" level="INFO">${celldata} = pass3</msg>
-<var>${celldata}</var>
-<arg>${sheetname}</arg>
-<arg>${row}</arg>
-<arg>${cell}</arg>
-<status status="PASS" start="2024-10-28T21:03:01.813938" elapsed="0.001000"/>
-</kw>
-<return>
-<value>${celldata}</value>
-<status status="PASS" start="2024-10-28T21:03:01.814938" elapsed="0.000000"/>
-</return>
-<msg time="2024-10-28T21:03:01.814938" level="INFO">${password} = pass3</msg>
-<var>${password}</var>
-<arg>Tabelle1</arg>
-<arg>${i}</arg>
-<arg>2</arg>
-<status status="PASS" start="2024-10-28T21:03:01.813938" elapsed="0.001000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:03:01.815938" level="INFO">Typing text 'user3' into text field 'name:_txtUserName'.</msg>
-<arg>name:_txtUserName</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:03:01.814938" elapsed="0.022010"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:03:01.837970" level="INFO">Typing password into text field 'name:_txtPassword'.</msg>
-<msg time="2024-10-28T21:03:01.848037" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>name:_txtPassword</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:03:01.837970" elapsed="0.016688"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:03:01.855665" level="INFO">Clicking button 'xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]'.</msg>
-<arg>xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:03:01.854658" elapsed="0.263808"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-28T21:03:07.118592" level="INFO">Slept 5 seconds.</msg>
-<arg>5 seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-28T21:03:02.118466" elapsed="5.000126"/>
-</kw>
-<var name="${i}">3</var>
-<status status="PASS" start="2024-10-28T21:03:01.584299" elapsed="5.534293"/>
-</iter>
-<iter>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:03:07.119613" level="INFO">Clicking element 'xpath:/html/body/div[4]/section/ul/li[2]/label'.</msg>
-<arg>xpath:/html/body/div[4]/section/ul/li[2]/label</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:03:07.119613" elapsed="0.231460"/>
-</kw>
-<kw name="Read Excel data from cell" owner="UserKeywords">
-<kw name="Fetch Cell Data" owner="ReadData">
-<msg time="2024-10-28T21:03:07.353068" level="INFO">${celldata} = user4</msg>
-<var>${celldata}</var>
-<arg>${sheetname}</arg>
-<arg>${row}</arg>
-<arg>${cell}</arg>
-<status status="PASS" start="2024-10-28T21:03:07.352068" elapsed="0.001000"/>
-</kw>
-<return>
-<value>${celldata}</value>
-<status status="PASS" start="2024-10-28T21:03:07.353068" elapsed="0.000000"/>
-</return>
-<msg time="2024-10-28T21:03:07.353068" level="INFO">${username} = user4</msg>
-<var>${username}</var>
-<arg>Tabelle1</arg>
-<arg>${i}</arg>
-<arg>1</arg>
-<status status="PASS" start="2024-10-28T21:03:07.352068" elapsed="0.001000"/>
-</kw>
-<kw name="Read Excel data from cell" owner="UserKeywords">
-<kw name="Fetch Cell Data" owner="ReadData">
-<msg time="2024-10-28T21:03:07.354068" level="INFO">${celldata} = pass4</msg>
-<var>${celldata}</var>
-<arg>${sheetname}</arg>
-<arg>${row}</arg>
-<arg>${cell}</arg>
-<status status="PASS" start="2024-10-28T21:03:07.354068" elapsed="0.000000"/>
-</kw>
-<return>
-<value>${celldata}</value>
-<status status="PASS" start="2024-10-28T21:03:07.354068" elapsed="0.000000"/>
-</return>
-<msg time="2024-10-28T21:03:07.355068" level="INFO">${password} = pass4</msg>
-<var>${password}</var>
-<arg>Tabelle1</arg>
-<arg>${i}</arg>
-<arg>2</arg>
-<status status="PASS" start="2024-10-28T21:03:07.354068" elapsed="0.001000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:03:07.355068" level="INFO">Typing text 'user4' into text field 'name:_txtUserName'.</msg>
-<arg>name:_txtUserName</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:03:07.355068" elapsed="0.021951"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:03:07.377019" level="INFO">Typing password into text field 'name:_txtPassword'.</msg>
-<msg time="2024-10-28T21:03:07.388535" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>name:_txtPassword</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:03:07.377019" elapsed="0.016732"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-28T21:03:07.395204" level="INFO">Clicking button 'xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]'.</msg>
-<arg>xpath:/html/body/div[4]/section/ul/li[2]/div/form/div/input[2]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-28T21:03:07.393751" elapsed="0.199025"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-28T21:03:12.593305" level="INFO">Slept 5 seconds.</msg>
-<arg>5 seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-28T21:03:07.592776" elapsed="5.001039"/>
-</kw>
-<var name="${i}">4</var>
-<status status="PASS" start="2024-10-28T21:03:07.118592" elapsed="5.475223"/>
-</iter>
-<var>${i}</var>
-<value>1</value>
-<value>${row}+1</value>
-<status status="PASS" start="2024-10-28T21:02:50.501185" elapsed="22.092630"/>
-</for>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-10-28T21:03:12.594826" elapsed="0.775639"/>
-</kw>
-<status status="PASS" start="2024-10-28T21:02:45.055258" elapsed="28.316215"/>
+<status status="PASS" start="2024-11-28T09:05:06.603196" elapsed="6.033574"/>
 </test>
-<status status="PASS" start="2024-10-28T21:02:44.279848" elapsed="29.092991"/>
+<status status="PASS" start="2024-11-28T09:05:06.287702" elapsed="6.351529"/>
 </suite>
 <statistics>
 <total>
@@ -360,11 +39,9 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="21 01 ExcelImport">21 01 ExcelImport</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="29 01 Sikuli TC 001">29 01 Sikuli TC 001</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-10-28T21:02:45.590653" level="WARN">Problem reading geckodriver versions: error sending request for url (https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/common/geckodriver/geckodriver-support.json). Using latest geckodriver version</msg>
-<msg time="2024-10-28T21:02:45.591659" level="WARN">Exception managing firefox: error sending request for url (https://github.com/mozilla/geckodriver/releases/latest)</msg>
 </errors>
 </robot>
