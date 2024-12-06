@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-12-06T16:45:07.042385" rpa="false" schemaversion="5">
+<suite id="s1" name="31 TC 002 Get Request Specific" source="C:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\31_Start_API-Testing\31_TC_002_Get_Request_Specific.robot">
+<test id="s1-t1" name="TC_001_Get_Request_Fetch_Student_Details_By_ID" line="9">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-12-06T16:45:08.229600" level="INFO">Creating Session using : alias=Fetch_Data, url=https://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>Fetch_Data</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-12-06T16:45:08.229600" elapsed="0.001001"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-12-06T16:45:10.185627" level="INFO">GET Request : url=https://thetestingworldapi.com/api/studentsDetails/10508257 
+ path_url=/api/studentsDetails/10508257 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-12-06T16:45:10.185627" level="INFO">GET Response : url=https://thetestingworldapi.com/api/studentsDetails/10508257 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Fri, 06 Dec 2024 15:45:06 GMT', 'Content-Length': '140'} 
+ body={"status":"true","data":{"id":10508257,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"}} 
+ </msg>
+<msg time="2024-12-06T16:45:10.185627" level="INFO">C:\Program Files\Wpy64-31230\python-3.12.3.amd64\Lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-12-06T16:45:10.185627" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>Fetch_Data</arg>
+<arg>api/studentsDetails/${StudentID}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-12-06T16:45:08.230601" elapsed="1.955026"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-12-06T16:45:10.186633" level="INFO">${actual_code} = 200</msg>
+<var>${actual_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-12-06T16:45:10.186633" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-12-06T16:45:10.187628" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-06T16:45:10.187628" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-06T16:45:10.187628" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-12-06T16:45:08.229600" elapsed="1.959028"/>
+</test>
+<status status="PASS" start="2024-12-06T16:45:07.045385" elapsed="3.144257"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="31 TC 002 Get Request Specific">31 TC 002 Get Request Specific</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
