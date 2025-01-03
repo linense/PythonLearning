@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-11-28T09:05:06.272444" rpa="false" schemaversion="5">
-<suite id="s1" name="29 01 Sikuli TC 001" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\29_Sikuli\29_01_Sikuli_TC_001.robot">
-<test id="s1-t1" name="TC_001 Start Browser on Windows" line="12">
-<kw name="Start Sikuli Process" owner="SikuliLibrary">
-<msg time="2024-11-28T09:05:06.610721" level="INFO">Starting process:
-java -jar "C:\Program Files\Wpy64-31230\python-3.12.3.amd64\Lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar" 53336 "C:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning"</msg>
-<msg time="2024-11-28T09:05:06.627700" level="INFO">Start sikuli java process on port 53336</msg>
-<msg time="2024-11-28T09:05:07.747543" level="INFO">Sikuli java process is started</msg>
-<status status="PASS" start="2024-11-28T09:05:06.604613" elapsed="3.462355"/>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-12-06T16:05:33.671011" rpa="false" schemaversion="5">
+<suite id="s1" name="31 TC 001 Get Request Robot" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\31_Start_API-Testing\31_TC_001_Get_Request_Robot.robot">
+<test id="s1-t1" name="TC_001_Get_Request" line="9">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-12-06T16:05:34.691584" level="INFO">Creating Session using : alias=Get_Student_Details, url=https://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>Get_Student_Details</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-12-06T16:05:34.690584" elapsed="0.004070"/>
 </kw>
-<kw name="Add Image Path" owner="SikuliLibrary">
-<arg>C:/Users/a315707/OneDrive - Deutsche Telekom AG/Schulungen/Programmierung/Python/PythonLearning/29_Sikuli/</arg>
-<doc>Add image path</doc>
-<status status="PASS" start="2024-11-28T09:05:10.066968" elapsed="0.029084"/>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-12-06T16:05:34.724165" level="WARN">Retrying (RetryAdapter(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA1687D0&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
+<msg time="2024-12-06T16:05:34.947699" level="WARN">Retrying (RetryAdapter(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA168B60&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
+<msg time="2024-12-06T16:05:35.369745" level="WARN">Retrying (RetryAdapter(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA168F20&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
+<msg time="2024-12-06T16:05:35.391774" level="FAIL">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA169130&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</msg>
+<var>${response}</var>
+<arg>Get_Student_Details</arg>
+<arg>/api/studentsDetails</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="FAIL" start="2024-12-06T16:05:34.695653" elapsed="0.703886">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA169130&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</status>
 </kw>
-<kw name="Click" owner="SikuliLibrary">
-<msg time="2024-11-28T09:05:11.297502" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1732781110591.png'/&gt;
-[log] CLICK on L[32,1056]@S(0) (572 msec)</msg>
-<arg>Sikuli_StartButton.png</arg>
-<doc>Click</doc>
-<status status="PASS" start="2024-11-28T09:05:10.096052" elapsed="1.201450"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-12-06T16:05:35.400987" elapsed="0.000000"/>
 </kw>
-<kw name="Click" owner="SikuliLibrary">
-<msg time="2024-11-28T09:05:12.636770" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1732781111890.png'/&gt;
-[log] CLICK on L[96,643]@S(0) (570 msec)</msg>
-<arg>Sikuli_Chrome.png</arg>
-<doc>Click</doc>
-<status status="PASS" start="2024-11-28T09:05:11.298498" elapsed="1.338272"/>
-</kw>
-<status status="PASS" start="2024-11-28T09:05:06.603196" elapsed="6.033574"/>
+<status status="FAIL" start="2024-12-06T16:05:34.689578" elapsed="0.711920">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA169130&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</status>
 </test>
-<status status="PASS" start="2024-11-28T09:05:06.287702" elapsed="6.351529"/>
+<status status="FAIL" start="2024-12-06T16:05:33.679905" elapsed="1.722602"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="29 01 Sikuli TC 001">29 01 Sikuli TC 001</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="31 TC 001 Get Request Robot">31 TC 001 Get Request Robot</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-12-06T16:05:34.724165" level="WARN">Retrying (RetryAdapter(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA1687D0&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
+<msg time="2024-12-06T16:05:34.947699" level="WARN">Retrying (RetryAdapter(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA168B60&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
+<msg time="2024-12-06T16:05:35.369745" level="WARN">Retrying (RetryAdapter(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA168F20&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
 </errors>
 </robot>

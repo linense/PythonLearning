@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-12-16T18:29:57.937257" rpa="false" schemaversion="5">
+<suite id="s1" name="33 01 Get Request" source="C:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\33_Rest_API_Testing\33_01_Get_Request.robot">
+<test id="s1-t1" name="TC_001_FetchStudentDetailsByID" line="12">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-12-16T18:30:01.995036" level="INFO">Creating Session using : alias=FetchData, url=https://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>FetchData</arg>
+<arg>${App_Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-12-16T18:30:01.995036" elapsed="0.000000"/>
+</kw>
+<kw name="Get Request" owner="RequestsLibrary">
+<msg time="2024-12-16T18:30:01.996580" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2024-12-16T18:30:04.796351" level="INFO">GET Request : url=https://thetestingworldapi.com/api/studentsDetails/10508257 
+ path_url=/api/studentsDetails/10508257 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-12-16T18:30:04.796351" level="INFO">GET Response : url=https://thetestingworldapi.com/api/studentsDetails/10508257 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Mon, 16 Dec 2024 17:30:03 GMT', 'Content-Length': '140'} 
+ body={"status":"true","data":{"id":10508257,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"}} 
+ </msg>
+<msg time="2024-12-16T18:30:04.796351" level="INFO">C:\Program Files\Wpy64-31230\python-3.12.3.amd64\Lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-12-16T18:30:04.796868" level="INFO">${Response} = &lt;Response [200]&gt;</msg>
+<var>${Response}</var>
+<arg>FetchData</arg>
+<arg>api/studentsDetails/${StudentID}</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<status status="PASS" start="2024-12-16T18:30:01.996580" elapsed="2.800288"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-12-16T18:30:04.798897" level="INFO">${actual_code} = 200</msg>
+<var>${actual_code}</var>
+<arg>${Response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-12-16T18:30:04.797885" elapsed="0.001012"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-12-16T18:30:04.798897" elapsed="0.001004"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2024-12-16T18:30:04.799901" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2024-12-16T18:30:04.801898" level="INFO">To JSON using : content={"status":"true","data":{"id":10508257,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"}} </msg>
+<msg time="2024-12-16T18:30:04.801898" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2024-12-16T18:30:04.803244" level="INFO">${json_res} = {'status': 'true', 'data': {'id': 10508257, 'first_name': 'SdddddPradddsad', 'middle_name': 'Pras', 'last_name': 'vara', 'date_of_birth': '12/12/1978'}}</msg>
+<var>${json_res}</var>
+<arg>${Response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2024-12-16T18:30:04.799901" elapsed="0.003343"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-12-16T18:30:04.929359" level="INFO">@{first_name_list} = [ SdddddPradddsad ]</msg>
+<var>@{first_name_list}</var>
+<arg>${json_res}</arg>
+<arg>data.first_name</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-12-16T18:30:04.803244" elapsed="0.126115"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-12-16T18:30:04.929868" level="INFO">${first_name} = SdddddPradddsad</msg>
+<var>${first_name}</var>
+<arg>${first_name_list}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-12-16T18:30:04.929868" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${first_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-16T18:30:04.931034" elapsed="0.000457"/>
+</kw>
+<status status="PASS" start="2024-12-16T18:30:01.992741" elapsed="2.938750"/>
+</test>
+<status status="PASS" start="2024-12-16T18:29:57.941807" elapsed="6.990703"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="33 01 Get Request">33 01 Get Request</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-16T18:30:01.996580" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2024-12-16T18:30:04.799901" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+</errors>
+</robot>
