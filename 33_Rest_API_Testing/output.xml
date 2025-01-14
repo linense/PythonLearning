@@ -1,106 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2025-01-13T19:44:44.756238" rpa="false" schemaversion="5">
-<suite id="s1" name="33 03 DeleteRequest" source="C:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\33_Rest_API_Testing\33_03_DeleteRequest.robot">
-<test id="s1-t1" name="TC_003 Validate Delete Request" line="11">
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2025-01-13T20:14:14.681082" rpa="false" schemaversion="5">
+<suite id="s1" name="33 04 PostRequest" source="C:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\33_Rest_API_Testing\33_04_PostRequest.robot">
+<test id="s1-t1" name="TC_004 Create new resource" line="11">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-01-13T19:44:46.469270" level="INFO">Creating Session using : alias=AppAccess, url=https://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<arg>AppAccess</arg>
+<msg time="2025-01-13T20:14:15.825777" level="INFO">Creating Session using : alias=AddData, url=https://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>AddData</arg>
 <arg>${base_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-01-13T19:44:46.468745" elapsed="0.000525"/>
+<status status="PASS" start="2025-01-13T20:14:15.825777" elapsed="0.000000"/>
 </kw>
-<kw name="Delete Request" owner="RequestsLibrary">
-<msg time="2025-01-13T19:44:46.469270" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
-<msg time="2025-01-13T19:44:55.069529" level="INFO">DELETE Request : url=https://thetestingworldapi.com/api/studentsDetails/28 
- path_url=/api/studentsDetails/28 
- headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
- body=None 
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-01-13T20:14:15.826778" level="INFO">&amp;{body} = { first_name=Testing | middle_name=A | last_name=World | date_of_birth=12/12/1990 }</msg>
+<var>&amp;{body}</var>
+<arg>first_name=Testing</arg>
+<arg>middle_name=A</arg>
+<arg>last_name=World</arg>
+<arg>date_of_birth=12/12/1990</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-01-13T20:14:15.825777" elapsed="0.001001"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-01-13T20:14:15.826778" level="INFO">&amp;{header} = { Content-Type=application/json }</msg>
+<var>&amp;{header}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-01-13T20:14:15.826778" elapsed="0.000000"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-01-13T20:14:17.876378" level="INFO">POST Request : url=https://thetestingworldapi.com/api/studentsDetails 
+ path_url=/api/studentsDetails 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '77'} 
+ body=first_name=Testing&amp;middle_name=A&amp;last_name=World&amp;date_of_birth=12%2F12%2F1990 
  </msg>
-<msg time="2025-01-13T19:44:55.070674" level="INFO">DELETE Response : url=https://thetestingworldapi.com/api/studentsDetails/28 
- status=200, reason=OK 
- headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Mon, 13 Jan 2025 18:44:51 GMT', 'Content-Length': '43'} 
- body={"status":"false","msg":"record not found"} 
+<msg time="2025-01-13T20:14:17.876378" level="INFO">POST Response : url=https://thetestingworldapi.com/api/studentsDetails 
+ status=400, reason=Bad Request 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Mon, 13 Jan 2025 19:14:14 GMT', 'Content-Length': '96'} 
+ body={"Message":"The request is invalid.","ModelState":{"studentsDetail":["An error has occurred."]}} 
  </msg>
-<msg time="2025-01-13T19:44:55.070674" level="INFO">C:\Program Files\Wpy64-31230\python-3.12.3.amd64\Lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-01-13T20:14:17.877377" level="INFO">C:\Program Files\Wpy64-31230\python-3.12.3.amd64\Lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-01-13T19:44:55.070674" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-01-13T20:14:17.877377" level="FAIL">HTTPError: 400 Client Error: Bad Request for url: https://thetestingworldapi.com/api/studentsDetails</msg>
 <var>${response}</var>
-<arg>AppAccess</arg>
-<arg>api/studentsDetails/28</arg>
-<doc>*DEPRECATED* Please use `DELETE On Session` instead.</doc>
-<status status="PASS" start="2025-01-13T19:44:46.469270" elapsed="8.601404"/>
+<arg>AddData</arg>
+<arg>/api/studentsDetails</arg>
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="FAIL" start="2025-01-13T20:14:15.826778" elapsed="2.053387">HTTPError: 400 Client Error: Bad Request for url: https://thetestingworldapi.com/api/studentsDetails</status>
 </kw>
 <kw name="Convert To String" owner="BuiltIn">
-<msg time="2025-01-13T19:44:55.071684" level="INFO">${code} = 200</msg>
 <var>${code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2025-01-13T19:44:55.071684" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-01-13T20:14:17.880165" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${code}</arg>
-<arg>200</arg>
+<arg>201</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-01-13T19:44:55.072806" elapsed="0.000000"/>
-</kw>
-<kw name="To Json" owner="RequestsLibrary">
-<msg time="2025-01-13T19:44:55.072806" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
-<msg time="2025-01-13T19:44:55.073830" level="INFO">To JSON using : content={"status":"false","msg":"record not found"} </msg>
-<msg time="2025-01-13T19:44:55.073830" level="INFO">To JSON using : pretty_print=False </msg>
-<msg time="2025-01-13T19:44:55.074933" level="INFO">${jsonresponse} = {'status': 'false', 'msg': 'record not found'}</msg>
-<var>${jsonresponse}</var>
-<arg>${response.content}</arg>
-<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
-<status status="PASS" start="2025-01-13T19:44:55.072806" elapsed="0.002127"/>
-</kw>
-<kw name="Get Value From Json" owner="JSONLibrary">
-<msg time="2025-01-13T19:44:55.107806" level="INFO">@{status_list} = [ false ]</msg>
-<var>@{status_list}</var>
-<arg>${jsonresponse}</arg>
-<arg>status</arg>
-<doc>Get Value From JSON using JSONPath</doc>
-<status status="PASS" start="2025-01-13T19:44:55.074933" elapsed="0.032873"/>
-</kw>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-01-13T19:44:55.107806" level="INFO">${status} = false</msg>
-<var>${status}</var>
-<arg>${status_list}</arg>
-<arg>0</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-01-13T19:44:55.107806" elapsed="0.000000"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${status}</arg>
-<arg>false</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-01-13T19:44:55.107806" elapsed="0.001509"/>
+<status status="NOT RUN" start="2025-01-13T20:14:17.880165" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
+<arg>message</arg>
 <arg>${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-01-13T19:44:55.109315" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-01-13T20:14:17.880165" elapsed="0.001003"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
+<arg>message</arg>
 <arg>${response.content}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-01-13T19:44:55.110322" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-01-13T20:14:17.881168" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-01-13T19:44:46.467240" elapsed="8.643082"/>
+<status status="FAIL" start="2025-01-13T20:14:15.824778" elapsed="2.056390">HTTPError: 400 Client Error: Bad Request for url: https://thetestingworldapi.com/api/studentsDetails</status>
 </test>
-<status status="PASS" start="2025-01-13T19:44:44.759406" elapsed="10.352283"/>
+<status status="FAIL" start="2025-01-13T20:14:14.683081" elapsed="3.199085"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="33 03 DeleteRequest">33 03 DeleteRequest</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="33 04 PostRequest">33 04 PostRequest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-01-13T19:44:46.469270" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
-<msg time="2025-01-13T19:44:55.072806" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
 </errors>
 </robot>
