@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-12-06T16:05:33.671011" rpa="false" schemaversion="5">
-<suite id="s1" name="31 TC 001 Get Request Robot" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\31_Start_API-Testing\31_TC_001_Get_Request_Robot.robot">
-<test id="s1-t1" name="TC_001_Get_Request" line="9">
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2025-01-13T19:33:51.444876" rpa="false" schemaversion="5">
+<suite id="s1" name="33 03 DeleteRequest" source="c:\Users\a315707\OneDrive - Deutsche Telekom AG\Schulungen\Programmierung\Python\PythonLearning\33_Rest_API_Testing\33_03_DeleteRequest.robot">
+<test id="s1-t1" name="TC_003 Validate Delete Request" line="11">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-12-06T16:05:34.691584" level="INFO">Creating Session using : alias=Get_Student_Details, url=https://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<arg>Get_Student_Details</arg>
-<arg>${Base_URL}</arg>
+<msg time="2025-01-13T19:33:53.258190" level="INFO">Creating Session using : alias=AppAccess, url=https://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>AppAccess</arg>
+<arg>${base_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-12-06T16:05:34.690584" elapsed="0.004070"/>
+<status status="PASS" start="2025-01-13T19:33:53.258190" elapsed="0.002377"/>
 </kw>
-<kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-12-06T16:05:34.724165" level="WARN">Retrying (RetryAdapter(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA1687D0&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
-<msg time="2024-12-06T16:05:34.947699" level="WARN">Retrying (RetryAdapter(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA168B60&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
-<msg time="2024-12-06T16:05:35.369745" level="WARN">Retrying (RetryAdapter(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA168F20&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
-<msg time="2024-12-06T16:05:35.391774" level="FAIL">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA169130&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</msg>
+<kw name="Delete Request" owner="RequestsLibrary">
+<msg time="2025-01-13T19:33:53.261896" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg time="2025-01-13T19:33:53.306501" level="WARN">Retrying (RetryAdapter(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B06FF530&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails/28</msg>
+<msg time="2025-01-13T19:33:53.541686" level="WARN">Retrying (RetryAdapter(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B06FFE00&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails/28</msg>
+<msg time="2025-01-13T19:33:53.975791" level="WARN">Retrying (RetryAdapter(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B1F38CB0&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails/28</msg>
+<msg time="2025-01-13T19:33:54.009314" level="FAIL">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails/28 (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B1F39220&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</msg>
 <var>${response}</var>
-<arg>Get_Student_Details</arg>
-<arg>/api/studentsDetails</arg>
-<doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="FAIL" start="2024-12-06T16:05:34.695653" elapsed="0.703886">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA169130&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</status>
+<arg>AppAccess</arg>
+<arg>api/studentsDetails/28</arg>
+<doc>*DEPRECATED* Please use `DELETE On Session` instead.</doc>
+<status status="FAIL" start="2025-01-13T19:33:53.261896" elapsed="0.907952">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails/28 (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B1F39220&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</status>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${response}</arg>
+<arg>${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-12-06T16:05:35.400987" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-01-13T19:33:54.169848" elapsed="0.000995"/>
 </kw>
-<status status="FAIL" start="2024-12-06T16:05:34.689578" elapsed="0.711920">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA169130&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</status>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-01-13T19:33:54.170843" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-13T19:33:53.255898" elapsed="0.914945">ConnectionError: HTTPSConnectionPool(host='thetestingworldapi.com', port=443): Max retries exceeded with url: /api/studentsDetails/28 (Caused by NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B1F39220&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)"))</status>
 </test>
-<status status="FAIL" start="2024-12-06T16:05:33.679905" elapsed="1.722602"/>
+<status status="FAIL" start="2025-01-13T19:33:51.452872" elapsed="2.719971"/>
 </suite>
 <statistics>
 <total>
@@ -36,12 +42,13 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="31 TC 001 Get Request Robot">31 TC 001 Get Request Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="33 03 DeleteRequest">33 03 DeleteRequest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-12-06T16:05:34.724165" level="WARN">Retrying (RetryAdapter(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA1687D0&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
-<msg time="2024-12-06T16:05:34.947699" level="WARN">Retrying (RetryAdapter(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA168B60&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
-<msg time="2024-12-06T16:05:35.369745" level="WARN">Retrying (RetryAdapter(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x000001A9EA168F20&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails</msg>
+<msg time="2025-01-13T19:33:53.261896" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg time="2025-01-13T19:33:53.306501" level="WARN">Retrying (RetryAdapter(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B06FF530&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails/28</msg>
+<msg time="2025-01-13T19:33:53.541686" level="WARN">Retrying (RetryAdapter(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B06FFE00&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails/28</msg>
+<msg time="2025-01-13T19:33:53.975791" level="WARN">Retrying (RetryAdapter(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("&lt;urllib3.connection.HTTPSConnection object at 0x00000208B1F38CB0&gt;: Failed to resolve 'thetestingworldapi.com' ([Errno 11001] getaddrinfo failed)")': /api/studentsDetails/28</msg>
 </errors>
 </robot>
