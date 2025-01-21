@@ -1,0 +1,6 @@
+First line
+Second line
+Third line
+Another line was appended
+What will it look like now
+Let's check it out

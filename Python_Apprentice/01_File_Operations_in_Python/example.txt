@@ -1,0 +1,4 @@
+We are doing an r+ operationrd line
+Another line was appended
+What will it look like now
+Let's check it out
