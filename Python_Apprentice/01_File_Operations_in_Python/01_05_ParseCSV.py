@@ -31,7 +31,6 @@ with file:
 
 print(" ")
 
-"""
 names = [['FirstName', 'LastName'],
          ['Sofia', 'Reyes'],
          ['Jerome', 'Jackson'],
@@ -43,7 +42,6 @@ with file:
     for row in names:
         file_writer.writerow(row)
 
-"""
 file = open('names.csv', 'w')
 with file:
     fnames = ['FirstName', 'LastName']
