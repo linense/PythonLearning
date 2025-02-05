@@ -1,0 +1,115 @@
+ls -n
+
+less python2_script.py
+
+less python3_script.py
+
+less sqlalchemy_script.py
+
+pip install virtualenv --upgrade
+
+virtualenv --version
+
+virtualenv first_env
+
+ls -n
+
+cd first_env
+
+ls -n
+
+cd bin
+
+ls -n
+
+cd ../..
+
+which python2
+
+which python3
+
+virtualenv -p /usr/local/bin/python2 first_env
+
+cd first_env/bin
+
+ls -n
+
+cd ../..
+
+virtualenv second_env
+
+ls -n
+
+virtualenv -p //anaconda3/bin/python3 second_env
+
+source first_env/bin/activate
+
+python --version
+
+ls -n
+
+python python2_script.py
+
+python python3_script.py
+
+pip list
+
+deactivate
+
+source second_env/bin/activate
+
+python --version
+
+python python2_script.py
+
+python python3_script.py
+
+pip list
+
+pip install SQLAlchemy
+
+pip list
+
+deactivate
+
+source first_env/bin/activate
+
+pip list
+
+python sqlalchemy_script.py
+
+deactivate
+
+source second_env/bin/activate
+
+pip list
+
+python sqlalchemy_script.py
+
+deactivate
+
+python sqlalchemy_script.py
+
+less run_sqlalchemy_script.sh
+
+chmod +x run_sqlalchemy_script.sh
+
+./run_sqlalchemy_script.sh
+
+source first_env/bin/activate
+
+pip install SQLAlchemy==1.2.19
+
+python sqlalchemy_script.py 
+
+deactivate
+
+
+
+
+
+
+
+
+
+
