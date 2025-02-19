@@ -8,7 +8,7 @@
     {
       "code": "NU1301",
       "level": "Error",
-      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.\r\n  The proxy tunnel request to proxy 'http://he141014.emea1.cds.t-internal.com:8080/' failed with status code '407'.\"",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.\r\n  The proxy tunnel request to proxy 'http://he141117.emea1.cds.t-internal.com:8080/' failed with status code '407'.\"",
       "libraryId": "Microsoft.NET.Test.Sdk"
     }
   ]
