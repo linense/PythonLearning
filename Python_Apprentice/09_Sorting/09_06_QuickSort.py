@@ -23,12 +23,12 @@ def quick_sort(original_list, start_index, end_index):
     if start_index >= end_index:
         return
 
-    pi = partition(original_list, start_index, end_index)
+    pi = partition(original_list, start_index, end_index) # pi = partition index
     
     print('Element in the right place: ', original_list[pi])
     print_list(original_list)
 
-    quick_sort(original_list, start_index, pi - 1) 
+    quick_sort(original_list, start_index, pi - 1) # recursive call of the function
     
     quick_sort(original_list, pi + 1, end_index)
 
