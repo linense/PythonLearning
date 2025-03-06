@@ -9,7 +9,7 @@ def f1(x):
   return g_x
 
 # Attempt to reference a function's local variable outside of the function
-print(y)
+#print(y)
 
 # Print the function's return value
 print(f'f1(5): {f1(5)}')

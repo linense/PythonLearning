@@ -25,5 +25,3 @@ print_var('y3', y3)
 z2 = np.float32(z)
 print_var('z2', z2)
 
-e=np.int64(2**33)
-print(e)

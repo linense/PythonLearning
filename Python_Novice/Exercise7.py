@@ -1,5 +1,5 @@
 # Create a function that accepts variable arguments as lists and named arguments
-def fn(*args, kwargs):
+def fn(*args, **kwargs):
 
     # Perform an operation on the list of arguments
     total = sum(args)
